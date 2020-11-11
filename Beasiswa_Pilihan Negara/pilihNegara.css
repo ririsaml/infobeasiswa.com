@@ -1,0 +1,133 @@
+@font-face {
+    font-family: "poppins";
+    src: url(Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: "poppins bold";
+    src: url(Poppins-Bold.ttf);
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "poppins";
+    background-color: white;
+}
+
+#navbar{
+    position: fixed;
+    width: 100%;
+    height: 11%;
+    background-color: #4E85E3;
+    box-shadow: 0px 0px 6px 0px black;
+}
+
+#logo{
+    width: 20%;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+#navbar1{
+    display: flex;
+    width: 100%;
+    padding-left: 20px;
+}
+
+a{
+    text-decoration: none;
+    font-family: "poppins";
+    font-size: 2.5vh;
+    color: #FFFF;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    margin-top: -3.1%;
+}
+
+#beranda {
+    margin-left: 57%;
+}
+
+.btn {
+    border-radius: 40px;
+    outline: none;
+    border-width: 0px;
+    font-family: "poppins";
+    color: white;
+}
+
+#login {
+    background-color: #FCC453;
+    width: 10%;
+    height: 5.5vh;
+    border-radius: 50px;
+    margin-top: -2.7%;
+    margin-left: 2%;
+    font-size: 2.3vh;
+}
+
+#login:focus {
+    background-color: #e0a42b;
+}
+
+.main {
+    position: absolute;
+    padding-top: 60px;
+}
+
+.main h1 {
+    font-family: "poppins bold";
+    font-size: 40px;
+    color: #FCC453;
+    padding-left: 410px;
+    padding-bottom: -10px;
+    margin-bottom: -10px;
+}
+
+.main p {
+    font-size: 17px;
+    color: rgb(161, 161, 161);
+    padding-left: 378px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+
+.pilih {
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 0px 5px 0px grey;
+    border-radius: 10px;
+    padding-left: 30px;
+    padding-right: 60px;
+    margin-left: 230px;
+    padding-top: 50px;
+}
+
+.swipex {
+    position: absolute;
+    display: flex;
+    margin-top: 140px;
+    margin-left: -50px;
+    padding-left: -50px;
+}
+
+.swipe {
+    width: 40px;
+}
+
+#kanan {
+    padding-left: 760px;
+}
+
+.row1 {
+    display: flex;
+}
+
+.row2 {
+    display: flex;
+}
+
+.flag {
+    width: 170px;
+}
