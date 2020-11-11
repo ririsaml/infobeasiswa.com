@@ -1,0 +1,152 @@
+@font-face {
+    font-family: "poppins";
+    src: url(Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: "poppins bold";
+    src: url(Poppins-Bold.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: "poppins";
+}
+
+.gambar {
+    position: absolute;
+    size: 100%;
+    margin-top: -10%;
+    padding-top: -10%;
+}
+
+#navbar{
+    position: fixed;
+    width: 100%;
+    height: 11%;
+    background-color: #4E85E3;
+    box-shadow: 0px 0px 6px 0px black;
+}
+
+#logo{
+    width: 20%;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+#navbar1{
+    display: flex;
+    width: 100%;
+    padding-left: 20px;
+}
+
+a{
+    text-decoration: none;
+    font-family: "poppins";
+    font-size: 2.5vh;
+    color: #FFFF;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    margin-top: -3.1%;
+}
+
+#beranda {
+    margin-left: 57%;
+}
+
+.btn {
+    border-radius: 40px;
+    outline: none;
+    border-width: 0px;
+    font-family: "poppins";
+    color: white;
+}
+
+#login {
+    background-color: #FCC453;
+    width: 10%;
+    height: 5.5vh;
+    border-radius: 50px;
+    margin-top: -2.7%;
+    margin-left: 2%;
+    font-size: 2.3vh;
+}
+
+#login:focus {
+    background-color: #e0a42b;
+}
+
+.fav {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    border-radius: 20px;
+    top: 90px;
+    left: 17px;
+    position: absolute;
+    width: 130px;
+    height: 40px;
+    font-size: 16px;
+    font-family: "poppins";
+    margin-bottom: -5px;
+}
+
+.main {
+    position: absolute;
+    padding-top: 10%;
+}
+
+.main p {
+    position: relative;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    margin-bottom: 80px;
+    margin-top: 100px;
+    padding-left: 50px;
+}
+
+.main h1 {
+    position: absolute;
+    padding-left: 13%;
+    font-family: "poppins bold";
+    color: #FCC453;
+    font-size: 50px;
+    padding-top: -5px;
+    margin-top: -5px;
+}
+
+.iconx {
+    position: absolute;
+    display: flex;
+    padding-left: -100px;
+    margin-left: -100px;
+    margin-top: 30px;
+}
+
+#icon {
+    padding-left: 230px;
+}
+
+.captx {
+    position: absolute;
+    display: flex;
+    margin-top: 35px;
+    padding-left: -90px;
+    margin-left: -90px;  
+    padding-bottom: -20px; 
+}
+
+#h {
+    font-size: 19px;
+    color: #FCC453;
+}
+
+#capt {
+    font-size: 18px;
+    color: #4E85E3;
+    padding-left: 216px;
+}
