@@ -1,0 +1,274 @@
+@font-face {
+    font-family: "Font Digital";
+    src: url(Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: "poppins bold";
+    src: url(Poppins-Bold.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Font Digital";
+}
+
+.gambar{
+    width: 100%;
+    height: 100vh;  
+    background-size: cover;
+}
+
+#navbar{
+    width: 100%;
+    height: 50%; 
+    top: 0px;
+}
+
+header{
+    width: 100%;
+    height: 11%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: background-color .5s ease;
+    z-index: 1000;
+    background-color: #4E85E3;
+}
+
+
+#logo{
+    width: 20%;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+#navbar1{
+    display: flex;
+    width: 100%;
+}
+
+.anavbar{
+    text-decoration: none;
+    font-size: 2.5vh;
+    color: #FFFF;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    margin-top: -3.5%;
+}
+
+#beranda {
+    margin-left: 57%;
+}
+
+.login {
+    background-color: #FCC453;
+    width: 10%;
+    height: 5.5vh;
+    border-radius: 50px;
+    margin-top: -3%;
+    margin-left: 2%;
+    font-size: 2.5vh;
+    font-family: "Font Digital";
+    border-radius: 40px;
+    outline: none;
+    border-width: 0px;
+    color: white;
+}
+
+#juduljenjang{
+    font-family: "poppins bold";
+    color: #FCC453;
+    margin-left: 2%;
+    margin-top: 5.5%;
+    font-size: 7vh;
+}
+
+.isifil{
+    display: flex;
+}
+
+.isijenjang{
+    margin-left: 7%;
+    width:65%;
+    margin-top: -2%;
+}
+
+.isijenjang1,.isijenjang2,.isijenjang3{
+    box-shadow: 0px 0px 10px #A1A2A5;
+    display: flex;
+    border-radius: 25px;
+}
+
+.isijenjang2,.isijenjang3{
+    margin-top: 3%;
+}
+
+.isijenjang1:hover,.isijenjang2:hover,.isijenjang3:hover{
+    box-shadow: 0px 0px 15px  #4E85E3;
+}
+
+.logojenjang{
+    margin-left: 20px;
+    margin-top: 8%;
+    height: 80%;
+    margin-bottom: -20px;
+}
+
+.bacaanisijenjang{
+    margin-top: -5px;
+    width: 65%;
+}
+
+.judulisijenjang{
+    color: #4E85E3;
+    font-size: 18px;
+    margin-bottom: -3%;
+}
+
+.isiisijenjang{
+    color: #A1A2A5;
+}
+
+.tgljenjang{
+    text-align: center;
+    width: 20%;
+    margin-top: -5px;
+}
+
+#bulantahun{
+    color: #A1A2A5;
+}
+
+#jenjangnya{
+    display: flex;
+    margin-top: -15px;
+}
+
+.jenjangnyaoren{
+    background-color: #FCC453;
+    height: 35px;
+    width: 35px;
+    border-radius: 30px;
+}
+
+#jenjangnya1{
+    margin-left: 28%;
+}
+
+#jenjangnya12,#jenjangnya23,#jenjangnya34{
+    margin-left: 5%;
+}
+
+#jenjangnya12{
+    margin-left: 17%;
+}
+
+.jenjangnyaungu,.jenjangnyamerah,.jenjangnyatosca{
+    height: 35px;
+    width: 35px;
+    border-radius: 30px;
+}
+
+.jenjangnyatosca{
+    background-color: #A5F1BC;
+}
+
+.jenjangnyaungu{
+    background-color: #ECB2F7;
+}
+
+.jenjangnyamerah{
+    background-color: #FC9674;
+}
+
+#jenjangnya2{
+    margin-left: 5%;
+}
+
+#jenjangnya3{
+    margin-left: 5%;
+}
+
+.selengkapnya{
+    background-color: #FCC453;
+    color: white;
+    font-family: "Font Digital";
+    border: none;
+    border-radius: 20px;
+    width: 120px;
+    height: 30px;
+    margin-top: 5%;
+    margin-left: 8px;
+    outline: none;
+}
+
+#tgljenjang2{
+    margin-left: 20px;
+}
+
+#tgljenjang3{
+    margin-left: 30px;
+}
+
+#filter{
+    margin-left: 8%;
+    margin-top: -2%;
+}
+
+#pilfil{
+    display: flex;
+}
+
+#fil{
+    color: #4E85E3;
+    margin-left: 35%;
+}
+
+.judpil{
+    color: #A1A2A5;
+    margin-left: 30%;
+}
+
+.pil,.pil1,.p1,.p2{
+    color: #A1A2A5;
+}
+
+.pil1,.p1{
+    margin-top: -1%;
+}
+
+.pil,.p2{
+    margin-top: -15%;
+}
+
+.pil1,.pil{
+    margin-left: 20%;
+}
+
+.p1,.p2{
+    width: 150%;
+}
+
+.pil:active,.pil1:active,.p1:active,.p2:active{
+    color: #4E85E3;
+}
+
+#garis{
+    width: 10%;
+    height: 10%;
+    margin-left: 5%;
+    margin-top: 6%;
+}
+
+.hr{
+    margin-top: -10%;
+    width: 150%;
+}
+
+#hr{
+    margin-top: -0.1%;
+    width: 150%;
+} 
