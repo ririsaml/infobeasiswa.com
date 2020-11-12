@@ -1,0 +1,115 @@
+@font-face {
+    font-family: "poppins";
+    src: url(Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: "poppins bold";
+    src: url(Poppins-Bold.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "poppins";
+    background-color: white;
+}
+
+#navbar{
+    position: fixed;
+    width: 100%;
+    height: 11%;
+    background-color: #4E85E3;
+    box-shadow: 0px 0px 6px 0px black;
+}
+
+#logo{
+    width: 20%;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+#navbar1{
+    display: flex;
+    width: 100%;
+    padding-left: 20px;
+}
+
+a{
+    text-decoration: none;
+    font-family: "poppins";
+    font-size: 2.5vh;
+    color: #FFFF;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    margin-top: -3.1%;
+}
+
+#beranda {
+    margin-left: 57%;
+}
+
+.btn {
+    border-radius: 40px;
+    outline: none;
+    border-width: 0px;
+    font-family: "poppins";
+    color: white;
+}
+
+#login {
+    background-color: #FCC453;
+    width: 10%;
+    height: 5.5vh;
+    border-radius: 50px;
+    margin-top: -2.7%;
+    margin-left: 2%;
+    font-size: 2.3vh;
+}
+
+#login:focus {
+    background-color: #e0a42b;
+}
+
+.mainx {
+    position: absolute;
+    padding-top: 70px;
+}
+
+.mainx h1 {
+    font-family: poppins bold;
+    font-size: 40px;
+    color: #FCC453;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.bg {
+    width: 100%;
+    position: absolute;
+}
+
+.main {
+    display: flex;
+    margin: 0;
+    padding-top: 80px;
+}
+
+.con {
+    position: relative;
+    color: white;
+    font-size: 16px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: -10px;
+    padding-top: -10px;
+    text-align: center;
+}
+
+#name {
+    font-size: 18px;
+    color: #FCC453;
+}
+
+
