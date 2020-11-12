@@ -1,0 +1,516 @@
+@font-face {
+    font-family: "Font Digital";
+    src: url(Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: "poppins bold";
+    src: url(Poppins-Bold.ttf);
+}
+
+
+.aktif{
+    background-color: #4e85e3;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Font Digital";
+}
+
+.gambar{
+    width: 100%;
+    height: 100vh;  
+    background-size: cover;
+}
+
+#navbar{
+    position: absolute;
+    width: 100%;
+    height: 50%; 
+    top: 0px;
+}
+
+header{
+    width: 100%;
+    height: 11%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: background-color .5s ease;
+    z-index: 1000;
+}
+
+#logo{
+    width: 20%;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+#navbar1{
+    display: flex;
+    width: 100%;
+}
+
+.anavbar{
+    text-decoration: none;
+    font-size: 2.5vh;
+    color: #FFFF;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    margin-top: -3.5%;
+}
+
+.anavbar:focus{
+    text-decoration: underline;
+}
+
+#beranda {
+    margin-left: 57%;
+}
+
+.login {
+    background-color: #4E85E3;
+    width: 10%;
+    height: 5.5vh;
+    border-radius: 50px;
+    margin-top: -3%;
+    margin-left: 2%;
+    font-size: 2.5vh;
+    font-family: "Font Digital";
+    border-radius: 40px;
+    outline: none;
+    border-width: 0px;
+    color: white;
+}
+
+#welkam {
+    top: 140px;
+    left: 50px;
+    position: absolute;
+}
+
+#judul {
+    font-family: "poppins bold";
+    color: white;
+    font-size: 53px;
+    padding-bottom: -10px;
+    margin-bottom: -10px;
+}
+
+#teks {
+    margin-top: -10px;
+    padding-top: -10px;
+    padding: 5px;
+    color: white;
+    font-size: 17px;
+}
+
+#btn {
+    background-color: #FCC453;
+    border-radius: 40px;
+    outline: none;
+    width: 250px;
+    height: 53px;
+    font-size: 17px;
+    color: white;
+    border: none;
+}
+
+#tulis{
+    font-family: "Font Digital";
+    text-align: center;
+    padding-bottom: 6vh;
+}
+
+#judul1{
+    color: #FCC453;
+    font-size: 7vh;
+}
+
+.isi{
+    color: #83858B;
+    margin-top: -1.2%;
+}
+
+#seminar{
+    height:76vh;
+    display: flex;
+    background-color: #F1F3F9;
+}
+
+.next{
+    height: 10%;
+    margin-top: 17%;
+    margin-left: 2%;
+}
+
+.listseminar{
+    display: flex;
+    margin-left: 3%;
+}
+
+.list1, .list2, .list3{
+    margin-top: 3%;
+    background-color: white;
+    box-shadow: 0px 0px 10px #A1A2A5;
+    border-radius: 65px;
+    height: 420px;
+    width: 380px;
+}
+
+#list1, #list2, #list3{
+    height: 93%;
+    width: 90%;
+    margin-top: 4%;
+    margin-left: 5%;
+}
+
+.list2, .list3{
+    margin-left: 8%;
+}
+
+#kanan{
+    margin-left: 3%;
+}
+
+#kalfil{
+    display: flex;
+    font-family: "Font Digital";
+}
+
+#kalender{
+    text-align: center;
+    margin-left: 8%;
+}
+
+.kolom1{
+    height: 30px;
+}
+
+.kolom{
+    height: 60px;
+}
+
+.kolom2{
+    height: 3px;
+    background-color: #A1A2A5;
+}
+
+#bulan{
+    color: #A1A2A5;
+    font-size: 6vh;
+}
+
+#hari{
+    color: #A1A2A5;
+    font-size: 3vh;
+}
+
+.blue{
+    background-color: #99BCF8;
+    border: 1.5px solid white;
+    font-size: 3.5vh;
+    color: white;
+    width: 120px;
+}
+
+.orange{
+    background-color: #FFD683;
+    border: 1.5px solid white;
+    font-size: 3.5vh;
+    color: white;
+    width: 120px;
+}
+
+.purple{
+    background-color: #ECB2F7;
+    border: 1.5px solid white;
+    font-size: 3.5vh;
+    color: white;
+    width: 120px;
+}
+
+.red{
+    background-color: #F9A083;
+    border: 1.5px solid white;
+    font-size: 3.5vh;
+    color: white;
+    width: 120px;
+}
+
+.green{
+    background-color: #A5F1BC;
+    border: 1.5px solid white;
+    font-size: 3.5vh;
+    color: white;
+    width: 120px;
+}
+
+.grey{
+    background-color: #CACED6;
+    border: 1.5px solid white;
+    font-size: 3.5vh;
+    color: white;
+    width: 120px;
+}
+
+.kosong{
+    color: #A1A2A5;
+    border: 1.5px solid white;
+    font-size: 3.5vh;
+    width: 120px;
+}
+
+#filter{
+    margin-left: 5%;
+}
+
+#pilfil{
+    display: flex;
+}
+
+#fil{
+    color: #4E85E3;
+    margin-left: 35%;
+}
+
+.judpil{
+    color: #A1A2A5;
+    margin-left: 30%;
+}
+
+.pil,.pil1,.p1,.p2{
+    color: #A1A2A5;
+}
+
+.pil1,.p1{
+    margin-top: -1%;
+}
+
+.pil,.p2{
+    margin-top: -15%;
+}
+
+.pil1,.pil{
+    margin-left: 20%;
+}
+
+.p1,.p2{
+    width: 150%;
+}
+
+.pil:active,.pil1:active,.p1:active,.p2:active{
+    color: #4E85E3;
+}
+
+#garis{
+    width: 10%;
+    height: 10%;
+    margin-left: 5%;
+    margin-top: 6%;
+}
+
+.hr{
+    margin-top: -10%;
+    width: 150%;
+}
+
+#hr{
+    margin-top: -0.1%;
+    width: 150%;
+} 
+
+#footergambar{
+    margin-top: 20px;
+    background-image: url('Footer.png');
+    height: 100%;
+    display: flex;
+}
+
+.kasus{
+    margin-left: 8%;
+    background: transparent;
+    border: 5px solid white;
+    border-radius: 40px;
+    width: 25%;
+    height: 380px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+#judulkasus{
+    text-align: center;
+    color: white;
+}
+
+.info12,.info34{
+    display: flex;
+}
+
+.info1,.info2,.info3,.info4{
+    border: 5px solid white;
+    border-radius: 20px;
+    width: 35%;
+    margin-left: 8%;
+}
+
+.info1{
+    background-color: #70DB7A;;
+}
+
+.info2{
+    background-color: #FFD173;
+}
+
+.info3,.info4{
+    margin-top: 3%;
+}
+
+.info3{
+    background-color: #FCA453;
+}
+
+.info4{
+    background-color: #F36F42;
+}
+
+#info1,#info2,#info3,#info4{
+    color: white;
+    font-size: 2.3vh;
+    text-align: center;
+}
+
+.total{
+    display: flex;
+}
+
+#total1, #total2{
+    text-align: center;
+    font-size: 3vh;
+}
+
+#total1{
+    color: white;
+    margin-left: 26%;
+}
+
+#total2{
+    margin-left: 5px;
+    color: #FCC453;
+}
+
+#update{
+    color: white;
+    text-align: center;
+    margin-top: -2%;
+}
+
+.info{
+    margin-left: 5%;
+}
+
+#judulinfo{
+    color:#FCC453;
+    font-family: "poppins bold";
+    font-size: 8vh;
+}
+
+.awaljudulinfo,.isiinfo,.awaljudulinfo1,.isiinfo1{
+    color: white;
+}
+
+.awaljudulinfo,.awaljudulinfo1{
+    font-size: 20px;
+}
+
+.awaljudulinfo{
+    margin-top: -6%;
+}
+
+.isiinfo,.isiinfo1{
+    font-size: 17px;
+    margin-top: -3%;
+}
+
+.hrinfo{
+    width: 740px;
+    margin-left: 0.001%;
+}
+
+.footer2{
+    background-color: #5167aa;
+    display: flex;
+    height: 100%;
+}
+
+.tentangkami,.sosialmedia,.populer,.terbaru,.kontakkami{
+    color: white;
+}
+
+.tentangkami,.sosialmedia,.populer,.terbaru{
+    margin-left: 5%;
+}
+
+.judulfooter{
+    font-size: 17px;
+}
+
+.hrfooter2{
+    margin-top: -5%;
+    width: 250px;
+}
+
+.hrfooter3{
+    margin-top: -5%;
+    width: 250px;
+    margin-bottom: -5%;
+}
+
+.emailtk,.telptk,.lokasitk{
+    display: flex;
+}
+
+#emailtk,#telptk,#lokasitk{
+    height: 25px;
+    width: 25px;
+}
+
+#pemailtk,#ptelptk,#plokasitk,#ppopulertk,#pterbarutk{
+    margin-top: -0.1px;
+}
+
+#pemailtk,#ptelptk,#plokasitk,#ppopulertk{
+    margin-left: 5%;
+    font-size: 15px;
+}
+
+#pterbarutk{
+    font-size: 16px;
+}
+
+.sosmedfooter{
+    display: flex;
+}
+
+.imgsosmedfooter{
+    margin-left: 5%;
+}
+
+#inputfooter{
+    font-family: "Font Digital";
+    padding-left: 20px;
+    color:#CACED6;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    width: 225px;
+    height: 30px;
+}
+
+.lastfooter{
+    background-color: #4E85E3;
+    width: 100%;
+}
