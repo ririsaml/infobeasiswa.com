@@ -1,0 +1,184 @@
+@font-face {
+    font-family: "Font Digital";
+    src: url(Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: "poppins bold";
+    src: url(Poppins-Bold.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Font Digital";
+}
+
+.gambar{
+    width: 100%;
+    height: 100vh;  
+    background-size: cover;
+}
+
+#navbar{
+    width: 100%;
+    height: 50%; 
+    top: 0px;
+}
+
+header{
+    width: 100%;
+    height: 11%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: background-color .5s ease;
+    z-index: 1000;
+    background-color: #4E85E3;
+}
+
+
+#logo{
+    width: 20%;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+#navbar1{
+    display: flex;
+    width: 100%;
+}
+
+.anavbar{
+    text-decoration: none;
+    font-size: 2.5vh;
+    color: #FFFF;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    margin-top: -3.5%;
+}
+
+#beranda {
+    margin-left: 57%;
+}
+
+.login {
+    background-color: #FCC453;
+    width: 10%;
+    height: 5.5vh;
+    border-radius: 50px;
+    margin-top: -3%;
+    margin-left: 2%;
+    font-size: 2.5vh;
+    font-family: "Font Digital";
+    border-radius: 40px;
+    outline: none;
+    border-width: 0px;
+    color: white;
+}
+
+#judulinfo{
+    font-family: "poppins bold";
+    color: #FCC453;
+    margin-left: 3%;
+    margin-top: 6%;
+    font-size: 6.5vh;
+}
+
+.isiskill{
+    display: flex;
+}
+
+.catatan{
+    background-color: #F1F3F9;
+    box-shadow: 0px 0px 10px #CACED6;
+    width: 300px;
+    height: 430px;
+    margin-left: 5%;
+    margin-top: -1%;
+    border-radius: 30px;
+}
+
+.catatan:hover{
+    box-shadow: 0px 0px 15px #4E85E3;
+}
+
+#gambarcatatan{
+    height: 100px;
+    width: 100px;
+    margin-left: 33%;
+    margin-top: 12%;
+}
+
+#catatantulis{
+    color: #A1A2A5;
+    text-align: center;
+    margin-top: 8%;
+}
+
+.listskill1,.listskill2{
+    margin-left: 3%;
+    margin-top: -1%;
+}
+
+.skill1,.skill2,.skill3,.skill4,.skill5{
+    display: flex;
+}
+
+.skill2.skill3{
+    margin-top: 3%;
+}
+
+.skill5{
+    margin-top: 5%;
+}
+
+#gambarskill1{
+    height: 70px;
+    width: 70px;
+}
+
+.tulisskill{
+    margin-top: -4%;
+    margin-left: 5%;
+    width: 350px;
+}
+
+#judullist{
+    color: #4E85E3;
+    font-size: 20px;
+}
+
+#isilist{
+    color: #A1A2A5;
+    font-size: 16px;
+    margin-top: -5%;
+}
+
+.persiapkan,.selamat{
+    background-color: #F1F3F9;
+    box-shadow: 0px 0px 10px #CACED6;
+    width: 400px;
+    height: 70px;
+    border-radius: 25px;
+}
+
+.persiapkan:hover,.selamat:hover{
+    box-shadow: 0px 0px 15px #4E85E3;
+}
+
+#persiapkantulis,#selamattulis{
+    color: #A1A2A5;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+#persiapkantulis{
+    margin-top: 10%;
+}
+
+#selamattulis{
+    margin-top: 5%;
+}
