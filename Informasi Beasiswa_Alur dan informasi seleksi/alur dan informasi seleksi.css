@@ -1,0 +1,154 @@
+@font-face {
+    font-family: "Font Digital";
+    src: url(Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: "poppins bold";
+    src: url(Poppins-Bold.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Font Digital";
+}
+
+.gambar{
+    width: 100%;
+    height: 100vh;  
+    background-size: cover;
+}
+
+#navbar{
+    width: 100%;
+    height: 50%; 
+    top: 0px;
+}
+
+header{
+    width: 100%;
+    height: 11%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: background-color .5s ease;
+    z-index: 1000;
+    background-color: #4E85E3;
+}
+
+
+#logo{
+    width: 20%;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+#navbar1{
+    display: flex;
+    width: 100%;
+}
+
+.anavbar{
+    text-decoration: none;
+    font-size: 2.5vh;
+    color: #FFFF;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    margin-top: -3.5%;
+}
+
+#beranda {
+    margin-left: 57%;
+}
+
+.login {
+    background-color: #FCC453;
+    width: 10%;
+    height: 5.5vh;
+    border-radius: 50px;
+    margin-top: -3%;
+    margin-left: 2%;
+    font-size: 2.5vh;
+    font-family: "Font Digital";
+    border-radius: 40px;
+    outline: none;
+    border-width: 0px;
+    color: white;
+}
+
+#judulalur{
+    font-family: "poppins bold";
+    color: #FCC453;
+    margin-left: 3%;
+    margin-top: 6%;
+    font-size: 6.5vh;
+}
+
+.lataralur{
+    display: flex;
+    margin-top: -2%;
+}
+
+.lataralur1{
+    width: 50%;
+    background-color: #679BF4;
+    height: 420px;
+}
+
+.lataralur2{
+    width: 50%;
+    background-color: #98BEFF;
+    height: 420px;
+}
+
+.alur1,.alur2,.alur3,.alur4,.alur5,.alur6{
+    display: flex;
+    margin-top: 4%;
+}
+
+.alur1,.alur2,.alur3{
+    margin-left: 18%;
+}
+
+.alur4,.alur5,.alur6{
+    margin-left: 20%;
+}
+
+.alur2,.alur3{
+    margin-top: 4%;
+}
+
+.alur5,.alur6{
+    margin-top: 1%;
+}
+
+#gambaralur{
+    height: 70px;
+    width: 70px;
+}
+
+.tulisalur{
+    margin-top: -4%;
+    margin-left: 5%;
+    width: 350px;
+}
+
+#judullist123,#judullist456{
+    font-size: 20px;
+}
+
+#judullist123{
+    color: #ffffff;
+}
+
+#judullist456{
+    color: #4E85E3;
+}
+
+#isilist123,#isilist456{
+    color: #ffffff;
+    font-size: 16px;
+    margin-top: -5%;
+}
