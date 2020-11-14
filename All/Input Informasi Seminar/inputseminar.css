@@ -1,0 +1,165 @@
+@font-face {
+    font-family: "Font Digital";
+    src: url(Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Font Digital Bold";
+    src: url(Poppins-Bold.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url(Group\ 223.png);
+    background-size: 100%;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#navbar{
+    position: fixed;
+    width: 100%;
+    height: 11%;
+    background-color: #4E85E3;
+    box-shadow: 0px 0px 6px 0px black;
+}
+
+#logo{
+    width: 20%;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+#navbar1{
+    display: flex;
+    width: 100%;
+    padding-left: 20px;
+}
+
+a{
+    text-decoration: none;
+    font-family: "poppins";
+    font-size: 2.5vh;
+    color: #FFFF;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    margin-top: -3.4%;
+}
+
+a:hover {
+    color: #2756a8;
+}
+
+#beranda {
+    margin-left: 57%;
+}
+
+.btn {
+    border-radius: 40px;
+    outline: none;
+    border-width: 0px;
+    font-family: "poppins";
+    color: white;
+}
+
+#foto_profil {
+    margin-top: -4.2%;
+}
+
+.foto_profil{
+    width: 70%;
+}
+
+#nama {
+    font-size: 3.3vh;
+    color: #FCC453;
+    font-family: "Font Digital Bold";
+    margin-top: -3.5%;
+    margin-left: -37px;
+}
+
+.seminar {
+    position: absolute;
+    margin-top: 37%;
+    margin-bottom: 3%;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    width: 750px;
+    border-radius: 15px;
+}
+
+.seminar h1 {
+    text-align: center;
+    color: #FCC453;
+    font-family: "Font Digital Bold";
+}
+
+#inp {
+    width: 700px;
+    height: 30px;
+    margin-left: 18px;
+    border-radius: 7px;
+    border: 1px solid #CACED6;
+    font-size: 15px;
+    padding-left: 10px;
+    font-family: "Font Digital";
+}
+
+#inp-last {
+    width: 700px;
+    height: 150px;
+    margin-left: 18px;
+    border-radius: 7px;
+    border: 1px solid #CACED6;
+    font-family: "Font Digital";
+    font-size: 15px;
+    padding-left: 10px;
+    font-family: "Font Digital";
+}
+
+.first {
+    margin-top: 20px;
+}
+
+.next {
+    margin-top: 10px;
+}
+
+#inp:focus {
+    border: 2px solid #4E85E3;
+    border-radius: 7px;
+    outline: none;
+}
+
+#inp-last:focus {
+    border: 2px solid #4E85E3;
+    border-radius: 7px;
+    outline: none;
+}
+
+#btn {
+    margin-top: 5%;
+    margin-left: 35%;
+    margin-bottom: 3%;
+    background-color: #FCC453;
+    border-radius: 40px;
+    outline: none;
+    width: 200px;
+    height: 40px;
+    border-width: 0px;
+    font-size: 15px;
+    font-family: "Font Digital";
+    color: white;
+}
+
+#btn:hover {
+    background-color: #90b3f0;
+}
+
+#btn:focus {
+    background-color: #2756a8;
+}
