@@ -1,7 +1,7 @@
 window.addEventListener('scroll', function () {
     let header = document.querySelector('header');
     let windowPosition = window.scrollY > 0;
-    header.classList.toggle('aktif', header, windowPosition);;
+    header.classList.toggle('aktif', header, windowPosition);
 })
 
 function myPopup() {
@@ -9,12 +9,12 @@ function myPopup() {
     popup.classList.toggle("show");
 }
 
-function myPopup2() {
-    var popup2 = document.getElementById("tabelpopup");
+function myPopup2(){
+    var popup2 = document.getElementsByClassName("tabpopup");
     popup2.classList.toggle("show2");
 }
 
-function myClick() {
+function myClick(){
     var popup3 = document.getElementById("list3");
     popup3.classList.toggle("appear");
 }

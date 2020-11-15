@@ -276,7 +276,6 @@ header{
     color: #A1A2A5;
     font-size: 6vh;
     cursor: pointer;
-    background-color: white;
 }
 
 .bulan .tabpopup{
@@ -289,6 +288,7 @@ header{
     padding-bottom: 30px;
     margin-top: -90px;
     margin-left: 230px;
+    background-color: white;
 }
 
 #judultab{
@@ -315,7 +315,7 @@ header{
     position: absolute;
 }
 
-#bulan .show2{
+.bulan .tabpopup .show2{
     visibility: visible;
     animation: fadeIn 1s;
 }
@@ -678,7 +678,7 @@ header{
 }
 
 .imgsosmedfooter{
-    margin-left: 4.7%;
+    margin-left: 10px;
     width: 27px;
     height: 27px;
 }
