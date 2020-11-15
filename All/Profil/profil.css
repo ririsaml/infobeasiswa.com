@@ -190,6 +190,7 @@ hr {
 .menu:hover {
     border: 1px solid #4E85E3;
     box-shadow: 0px 0px 3.5px #4375cc;
+    color: #2756a8;
 }
 
 .menu:focus {
@@ -206,7 +207,7 @@ hr {
     color: white;
     width: 200px;
     height: 40px;
-    margin-left: 50px;
+    margin-left: 25px;
     margin-top: 40px;
     font-family: "poppins";
 }

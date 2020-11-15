@@ -22,6 +22,14 @@
     background-color: #FCC453
 }
 
+#buttonId:hover{
+    background-color: #98BEFF;
+}
+
+#buttonId:focus {
+    background-color: #275bb6;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -72,6 +80,10 @@ header{
     margin-top: -3.5%;
 }
 
+.anavbar:hover {
+    color: #2756a8;
+}
+
 .anavbar:focus{
     text-decoration: underline;
 }
@@ -86,6 +98,7 @@ header{
     height: 5.5vh;
     border-radius: 50px;
     margin-top: -3%;
+    padding-top: -3%;
     margin-left: 2%;
     font-size: 2.5vh;
     font-family: "Font Digital";
@@ -93,6 +106,7 @@ header{
     outline: none;
     border-width: 0px;
     color: white;
+    position: absolute;
 }
 
 #welkam {
@@ -126,6 +140,15 @@ header{
     font-size: 17px;
     color: white;
     border: none;
+    font-family: "Font Digital";
+}
+
+#btn:hover {
+    background-color: #98BEFF;
+}
+
+#btn:focus{
+    background-color: #275bb6;
 }
 
 #tulis{
@@ -136,7 +159,8 @@ header{
 
 #judul1{
     color: #FCC453;
-    font-size: 7vh;
+    font-size: 40px;
+    font-family: "poppins bold";
 }
 
 .isi{

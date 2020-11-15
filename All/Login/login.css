@@ -81,7 +81,11 @@ h1{
 }
 
 #tombol:hover{
-    background-color: #FCC453;
+    background-color:#98BEFF;
+}
+
+#tombol:focus{
+    background-color: #2756a8;
 }
 
 #medsos{
