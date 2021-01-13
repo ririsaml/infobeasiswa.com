@@ -1,7 +1,12 @@
 @font-face {
     font-family: "Font Digital";
     src: url("poppins.regular.ttf")
-    }
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
 
 html,body,h1{
     margin: 0;
@@ -19,14 +24,21 @@ html,body,h1{
 
 #gambar{
     width: 40%;
+    z-index: -1;
 }
 
 .gambar{
     width: 90%;
 }
 
-#form{
+.gambar2{
+    width: 90%;
+    visibility: hidden;
+}
+
+.form{
     width: 60%;
+    z-index: -1;
 }
 
 h1{
@@ -37,7 +49,7 @@ h1{
     margin-left: 38%;
 }
 
-.inputan {
+.form-control input{
     width: 500px;
     height: 35px;
     margin-left: 14%;
@@ -48,25 +60,21 @@ h1{
     padding-left: 10px;
 }
 
-.inputan:focus{
+.form-control input:focus{
     border: 3px solid #4E85E3;
     border-radius: 10px;
     outline: none;
 }
 
-#awalinputan{
+#email{
     margin-top: 15px;
 }
 
-#nextinputan1{
+#pass, #konfirmasi{
     margin-top: 8px;
 }
 
-#nextinputan2{
-    margin-top: 8px;
-}
-
-#tombol {
+.form #buttonmasuk {
     width: 519px;
     height: 40px;
     margin-top: 8px;
@@ -80,11 +88,11 @@ h1{
     font-family: "Font DIgital";
 }
 
-#tombol:hover{
+.form #buttonmasuk:hover{
     background-color:#98BEFF;
 }
 
-#tombol:focus{
+.form #buttonmasuk:focus{
     background-color: #2756a8;
 }
 
@@ -133,4 +141,200 @@ h1{
 
 a{
     text-decoration: none;
+}
+
+.form-control{
+    position: relative;
+}
+
+.form-control i{
+    visibility: hidden;
+    position: absolute;
+    top: 28px;
+    right: 200px;
+}
+
+#formnext i{
+    top: 21px;
+}
+
+.form-control.success input{
+    border-color: #2Ecc71;
+}
+
+.form-control.error input{
+    border-color: #e74c3c;
+}
+
+.form-control.success i.fa-check-circle{
+    color: #2Ecc71;
+    visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle{
+    color: #e74c3c;
+    visibility: visible;
+}
+
+.valpopup1{
+    visibility: hidden;
+    background-color: #ffffff;
+    width: 400px;
+    position: absolute;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #4E85E3;
+    padding: 30px;
+    margin-left: 50.5%;
+    margin-top: 9%;
+    text-align: center;
+    font-family: "Font Digital";
+}
+
+.valpopup1 .back {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+    visibility: hidden;
+}
+.valpopup1 i.fa-check-circle{
+    color: #2Ecc71;
+    font-size: 100px;
+}
+
+.valpopup1.show .back{
+    visibility: visible;
+}
+
+.valpopup1.show{
+    visibility: visible;
+    animation: fadeIn 1s;
+}
+
+#buttonpopup{
+    width: 340px;
+    height: 40px;
+    border-radius: 10px;
+    border-width: 0px;
+    background-color: #2756a8;
+    color: #ffffff;
+    font-size: 16px;
+    outline: none;
+    font-family: "Font DIgital";
+}
+
+#buttonpopup:hover{
+    background-color:#98BEFF;
+}
+
+@media screen and (max-width:768px){
+    body{
+        width: 100%;
+    }
+    .gambar{
+        visibility: hidden;
+    }
+    .gambar2{
+        visibility: visible;
+        width: 250%;
+        margin-top: 82%;
+    }
+    #form{
+        margin-left: -33%;
+        margin-top: 10%;
+    }
+    #judulmasuk{
+        margin-left: 55%;
+    }
+    #medsos{
+       width: 112%;
+       margin-left: 30%;
+    }
+    #medsosgambar1{
+        margin-left: 45%;
+    }
+    #tologin{
+        margin-left: 40%;
+    }
+    .form-control i{
+        left: 120%;
+    }
+    .valpopup1{
+        right: 21%;
+        top:8%;
+    }
+}
+
+@media screen and (max-width:576px){
+    body{
+        width: 100%;
+    }
+    .gambar{
+        visibility: hidden;
+    }
+    .gambar2{
+        visibility: visible;
+        width: 250%;
+        margin-top: 191.5%;
+    }
+    .form #judulmasuk{
+        font-size: 30px;
+        margin-left: 60%;
+    }
+    #form{
+        margin-left: -40%;
+    }
+    .form-control input{
+        width: 280px;
+        height: 30px;
+        margin-left: 14%;
+        font-size: 12px;
+    }
+    .form #buttonmasuk{
+        width: 296px;
+        height: 35px;
+        font-size: 14px;
+    }
+    .form #medsos{
+        font-size: 12px;
+        width: 130%;
+        margin-left: 18%;
+    }
+    .medsosgambar{
+        width: 25%;
+        height: 25%;
+    }
+    .googleplus{
+        width: 40%;
+        height: 40%;
+        margin-top: -9px;
+    }
+    #tologin{
+        width: 100%;
+    }
+    #punya, #masuk{
+        font-size: 12px;
+    }
+    .form-control i{
+        margin-top: -1%;
+        margin-left: 20%;
+    }
+    .valpopup1{
+        width: 180px;
+        padding: 30px;
+        font-size: 12px;
+        right: 18%;
+        top: 9%;
+    }
+    #buttonpopup{
+        width: 140px;
+        height: 30px;
+        font-size: 12px;
+    }
+    .valpopup1 i.fa-check-circle{
+        font-size: 50px;
+    }
 }
