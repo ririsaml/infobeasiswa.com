@@ -1,0 +1,732 @@
+@font-face {
+    font-family: "poppins";
+    src: url(Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: "poppins bold";
+    src: url(Poppins-Bold.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "poppins";
+}
+
+nav{
+    display: flex;
+    background-color: #4E85E3;
+    justify-content: space-around;
+    box-shadow: 0px 0px 6px 0px black;
+    position: fixed;
+    width: 100%;
+}
+
+#logo{
+    width: 80%;
+    padding: 5px;
+    margin-left: -42%;
+    margin-top: 5px;
+}
+
+nav ul{
+    display: flex;
+    margin-top: 18px;
+    list-style: none;
+    justify-content: space-between;
+    width: 40%;
+    margin-right: -30%;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color: #2756a8;
+}
+
+.btn {
+    outline: none;
+    border-width: 0px;
+    font-family: "poppins";
+    color: white;
+    background-color: #FCC453;
+    width: 118%;
+    height: 5.5vh;
+    border-radius: 50px;
+    font-size: 2vh;
+    padding: 5px;
+    margin-top: -5px;
+}
+
+.btn:hover{
+    background-color: #98BEFF;
+}
+
+.btn:focus {
+    background-color: #275bb6;
+}
+
+.toogle {
+    display: flex;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.toogle span {
+    display: none;
+    width: 28px;
+    height: 3px;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.main1{
+    background-image: url(Group\ 227.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+ 
+.atas {
+    padding-top: 90px;
+    text-align: center;
+}
+
+.atas h1 {
+    font-family: "poppins bold";
+    color: #FCC453;
+    font-size: 50px;
+}
+
+.p {
+    font-size: 17px;
+    color: white;
+    margin-bottom: 60px;
+    width: 50%;
+    margin-left: 25%;
+}
+
+.search {
+    font-family: "poppins";
+    width: 370px;
+    height: 40px;
+    border: none;
+    background-color: white;
+    border-radius: 28px;
+    font-size: 18px;
+    padding-left: 20px;
+    color: rgb(116, 116, 116);
+}
+
+.search:hover {
+    transform-style: preserve-3d;
+    transform: scale(1.02);
+    transition: all ease 0.3s;
+}
+
+.search:focus {
+    transform-style: preserve-3d;
+    transform: scale(1.02);
+    transition: all ease 0.3s;
+    outline: none;
+}
+
+.icon {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#jenjang:hover{
+    transform-style: preserve-3d;
+    transform: scale(1.02);
+    transition: all ease 0.3s;
+}
+
+#jenjang:focus{
+    transform-style: preserve-3d;
+    transform: scale(1.02);
+    transition: all ease 0.3s;
+}
+
+#jenjang {
+    width: 120px;
+    height: 120px;
+}
+
+.teks {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+
+#capt {
+    font-size: 18px;
+    color: rgb(151, 150, 150);
+    text-decoration: none;
+    list-style: none;
+}
+
+#capt:hover {
+    color: #2756a8;
+}
+
+.main2 h1 {
+    font-family: "poppins bold";
+    font-size: 40px;
+    color: #FCC453;
+    text-align: center;
+}
+
+.p2 {
+    font-size: 17px;
+    color: rgb(161, 161, 161);
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.pilih {
+    background-color: white;
+    box-shadow: 0px 0px 5px 0px grey;
+    border-radius: 10px;
+    margin-left: 18%;
+    margin-right: 18%;
+    margin-bottom: 80px;
+}
+
+.swipex {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 27px;
+    padding-right: 27px;
+    margin-left: -21px;
+    margin-right: -21px;
+}
+
+.swipe {
+    width: 40px;
+    height: 40px;
+}
+
+.swipe:hover{
+    transform-style: preserve-3d;
+    transform: scale(1.1);
+    transition: all ease 0.3s;
+}
+
+.row1 {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+}
+
+.row2 {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 30px;
+}
+
+.flag {
+    width: 170px;
+    border-radius: 10px;
+}
+
+.flag:hover {
+    transform-style: preserve-3d;
+    transform: scale(1.05);
+    transition: all ease 0.3s;
+}
+
+.main3{
+    background-image: url(bg.png);
+    background-size: 100%;
+    margin-bottom: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.review {
+    font-family: poppins bold;
+    font-size: 40px;
+    color: #FCC453;
+    text-align: center;
+    margin-bottom: 30px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main {
+    display: flex;
+    justify-content: space-around;
+}
+
+.con {
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    margin: 2.5%;
+    width: 30%;
+}
+
+#name {
+    font-size: 18px;
+    color: #FCC453;
+}
+
+.footer {
+    background-size: 100%;
+    background-color: #5167aa;
+    width: 100%;
+    color: white;
+}
+
+.footer2 {
+    display: flex;
+}
+
+.emailtk, .telptk, .lokasitk {
+    display: flex;
+}
+
+#icon1 {
+    width: 25px;
+    height: 25px;
+}
+
+.footer2{
+    background-color: #5167aa;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.judulfooter{
+    font-size: 15px;
+}
+
+.emailtk,.telptk,.lokasitk{
+    display: flex;
+    margin-top: 15px;
+}
+
+#icon1{
+    margin-right: 10px;
+}
+
+#emailtk,#telptk,#lokasitk{
+    height: 25px;
+    width: 25px;
+}
+
+#pemailtk,#ptelptk,#plokasitk,#ppopulertk{
+    font-size: 12px;
+}
+
+#edit{
+    font-size: 12px;
+}
+
+#pterbarutk {
+    font-size: 12px;
+}
+
+.sosmedfooter{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.imgsosmedfooter{
+    margin-left: 4.7%;
+    width: 27px;
+    margin-top: 10px;
+}
+
+#inputfooter{
+    margin-top: 10px;
+    font-family: "poppins";
+    padding-left: 20px;
+    color:#CACED6;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    width: 225px;
+    height: 30px;
+}
+
+.lastfooter{
+    background-color: #4E85E3;
+    width: 100%;
+}
+
+@media (max-width:768px){
+
+    nav {
+        position: fixed;
+    }
+    
+    #logo{
+        width: 50%;
+        margin-left: 5px;
+    }
+    
+    nav ul{
+        margin-top: 10px;
+        width: 50%;
+        margin-right: 18px;
+    }
+    
+    nav ul li a{
+        font-size: 12px;
+    }
+    
+    .btn {
+        height: 2.7vh;
+        font-size: 11px;
+        padding: 2px;
+    }
+
+    .main1{
+        background-size: 110%;
+        background-position: top;
+    }
+    
+    .atas {
+        padding-top: 50px;
+    }
+    
+    .atas h1 {
+        font-size: 27px;
+    }
+    
+    .p {
+        font-size: 11px;
+        margin-bottom: 20px;
+    }
+    
+    .search {
+        width: 160px;
+        height: 26px;
+        font-size: 11px;
+        padding-left: 10px;
+    }
+    
+    .icon {
+        margin-top: 20px;
+    }
+    
+    #jenjang {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .teks {
+        margin-bottom: 45px;
+    }
+    
+    #capt {
+        font-size: 11px;
+    }
+    
+    #capt:hover {
+        color: #2756a8;
+    }
+    
+    .main2 h1 {
+        font-size: 27px;
+    }
+
+    .p2 {
+        font-size: 11px;
+    }
+    
+    .pilih {
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 50px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .swipex {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 22px;
+        padding-right: 22px;
+    }
+    
+    .swipe {
+        width: 27px;
+        height: 27px;
+    }
+
+    #kiri{
+        margin-left: -2.5%;
+    }
+
+    #kanan{
+        margin-right: -2.5%;
+    }
+    
+    .row1 {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 18px;
+    }
+    
+    .row2 {
+        padding-bottom: 18px;
+    }
+    
+    .flag {
+        width: 80px;
+        border-radius: 10px;
+    }
+    
+    .flag:hover {
+        transform-style: preserve-3d;
+        transform: scale(1.05);
+        transition: all ease 0.3s;
+    }
+
+    .main3{
+        background-size: 100%;
+        margin-bottom: 50px;
+        padding: 0px;
+    }
+    
+    .review {
+        font-size: 27px;
+        margin-bottom: 25px;
+    }
+    
+    .con {
+        font-size: 9px;
+        margin: 2.5%;
+        width: 30%;
+    }
+
+    #pp{
+        width: 37px;
+    }
+    
+    #name {
+        font-size: 11px;
+    }
+    
+    #icon1 {
+        width: 15px;
+        height: 15px;
+    }
+    
+    .footer2{
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    
+    .judulfooter{
+        font-size: 10px;
+    }
+    
+    .emailtk,.telptk,.lokasitk{
+        display: flex;
+        margin-top: 10px;
+    }
+    
+    #icon1{
+        margin-right: 8px;
+    }
+    
+    #emailtk,#telptk,#lokasitk{
+        height: 25px;
+        width: 25px;
+    }
+    
+    #pemailtk,#ptelptk,#plokasitk,#ppopulertk{
+        font-size: 8px;
+    }
+    
+    #edit{
+        font-size: 8px;
+    }
+    
+    #pterbarutk {
+        font-size: 8px;
+    }
+    
+    .sosmedfooter{
+        display: flex;
+        margin-bottom: 10px;
+    }
+    
+    .imgsosmedfooter{
+        margin-left: 4.7%;
+        width: 17px;
+        margin-top: 5px;
+    }
+    
+    #inputfooter{
+        margin-top: 5px;
+        width: 150px;
+        height: 20px;
+        font-size: 8px;
+    }
+
+}
+
+@media (max-width:576px){
+
+    body nav {
+        position: fixed;
+        width: 100%;
+    }
+
+    #logo {
+        margin-top: 5px;
+    }
+
+    .toogle {
+        margin-top: 16px;
+        margin-right: 12px;
+    }
+    
+    .toogle span {
+        display: block;
+    }
+
+    nav ul{
+        display: none;
+        margin-top: 10px;
+        width: 50%;
+        margin-right: 18px;
+    }
+    
+    nav ul li a{
+        font-size: 12px;
+    }
+    
+    .btn {
+        height: 2.7vh;
+        font-size: 11px;
+        padding: 2px;
+    }
+
+    .main1, .main2, .main3, .footer {
+        margin-right: -6%;
+    }
+
+    .main1{
+        background-size: 160%;
+    }
+    
+    .atas h1 {
+        font-size: 24.5px;
+    }
+    
+    .p {
+        font-size: 11px;
+        margin-bottom: 10px;
+        width: 92%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .search {
+        width: 60%;
+    }
+    
+    #jenjang {
+        margin-top: 3%;
+        width: 55px;
+        height: 55px;
+    }
+    
+    #capt {
+        font-size: 10px;
+    }
+    
+    #capt:focus {
+        color: #2756a8;
+    }
+    
+    .main2 h1 {
+        font-size: 24px;
+    }
+    
+    .p2 {
+        font-size: 11px;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .pilih {
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 10px;
+        padding-left: 35px;
+        padding-right: 21px;
+    }
+
+    #last_f {
+        display: none;
+    }
+    
+    .swipex {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .swipe {
+        width: 27px;
+        height: 27px;
+    }
+
+    #kiri{
+        margin-left: -5%;
+    }
+
+    #kanan{
+        margin-right: -0.5%;
+    }
+    
+    .row1 {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 10px;
+    }
+    
+    .row2 {
+        margin-top:-20px;
+        padding-bottom: 4px;
+    }
+    
+    .review {
+        font-size: 20px;
+        width: 90%;
+    }
+    
+    .con {
+        font-size: 9px;
+        margin: 2.5%;
+        width: 45%;
+    }
+
+    #last_r{
+        display: none;
+    }
+    
+    .terbaru, .populer{
+        display: none;
+    }
+
+}
