@@ -4,19 +4,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>List Beasiswa Negara</title>
     <link rel="stylesheet" href="list beasiswa negara.css">
+    <script src="list beasiswa negara.js"></script>
 </head>
 <body>
-    <header>
-        <div id="navbar">
+    <nav>
+        <div>
             <img id="logo" src="logo infobeasiswa 3.png">
-            <div id="navbar1">
-                <a href="../../index.html" class="anavbar" id="beranda">Beranda</a>
-                <a href="../One Page Eksplorasi Beasiswa/eksplorasi_beasiswa.html" class="anavbar">Eksplor Beasiswa</a>
-                <a href="../../index.html" class="anavbar">Seminar</a>
-                <a href="../Login/login.html"><button type="menu" class="btn" id="login">Masuk/Daftar</button></a>
-            </div>
         </div>
-    </header>
+        <ul>
+            <li onclick="normal()" ><a href="../../index.html" id="menu" >Beranda</a></li>
+            <li onclick="normal()" ><a href="../One Page Eksplorasi Beasiswa/eksplorasi_beasiswa.html" id="menu">Eksplor Beasiswa</a></li>
+            <li onclick="normal()" ><a href="../../index.html" id="menu" >Seminar</a></li>
+            <li onclick="normal()" ><a href="../Login/login.html"><button type="menu" class="btn">Masuk/Daftar</button></a></li>
+        </ul>
+
+        <div onclick="show_menu()" class="toogle">
+            <span onclick="show_menu()" id="st"></span>
+            <span onclick="show_menu()" id="nd"></span>
+            <span onclick="show_menu()" id="rd"></span>
+        </div>
+    </nav>
     <p id="juduljenjang">Korea</p>
     <div class="isifil">
         <div class="isijenjang">
@@ -30,8 +37,8 @@
                     </p>
                     <p class="isiisijenjang">
                         Program beasiswa AMA sangat ditujukan kepada calon mahasiswa 
-                        <br>yang memiliki bakat seni dan ingin mendalaminya pada institusi 
-                        <br>Korea National University of Arts (K’ARTS).
+                        yang memiliki bakat seni dan ingin mendalaminya pada institusi 
+                        Korea National University of Arts (K’ARTS).
                     </p>
                 </div>
                 <div class="tgljenjang">
@@ -53,8 +60,8 @@
                     </p>
                     <p class="isiisijenjang">
                         Beasiswa penuh yang ditawarkan oleh pemerintah Selatan kepada 
-                        <br>pelajar internasional di berbagai negara. Beberapa universitas yang 
-                        <br>tergabung dan bekerja sama dalam program beasiswa ini.
+                        pelajar internasional di berbagai negara. Beberapa universitas yang 
+                        tergabung dan bekerja sama dalam program beasiswa ini.
                     </p>
                 </div>
                 <div class="tgljenjang" id="tgljenjang2">
@@ -64,7 +71,7 @@
                         <div class="jenjangnyamerah" id="jenjangnya23"></div>
                         <div class="jenjangnyatosca" id="jenjangnya34"></div>
                     </div>
-                    <button type="menu" class="selengkapnya"><a>Selengkapnya</a></button>
+                    <button type="menu" class="selengkapnya" id="bulantahun3"><a>Selengkapnya</a></button>
                 </div>
             </div>
             <div class="isijenjang3">
@@ -77,8 +84,8 @@
                     </p>
                     <p class="isiisijenjang">
                         Beasiswa pertukaran pelajar yang dibiayai oleh Seoul National 
-                        <br>University sejak tahun 1995 kembali dibuka. Beasiswa ini ditujukan 
-                        <br>kepada mahasiswa yang ingin beajar di SNU.
+                        University sejak tahun 1995 kembali dibuka. Beasiswa ini ditujukan 
+                        kepada mahasiswa yang ingin beajar di SNU.
                     </p>
                 </div>
                 <div class="tgljenjang" id="tgljenjang3">
@@ -87,12 +94,11 @@
                         <div class="jenjangnyaoren" id="jenjangnya1"></div>
                         <div class="jenjangnyamerah" id="jenjangnya2"></div>
                     </div>
-                    <button type="menu" class="selengkapnya"><a>Selengkapnya</a></button>
+                    <button type="menu" class="selengkapnya" id="bulantahun2"><a>Selengkapnya</a></button>
                 </div>
             </div>
         </div>
         <div id="filter">
-            <form>
                 <div id="pilfil">
                     <label id="fil"><b>Filter</b></label>
                     <img src="garis.png" id="garis">
