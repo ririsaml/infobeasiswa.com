@@ -81,12 +81,26 @@ nav ul li a:hover{
     margin-top: 20px;
 }
 
+#st{
+    transform-origin: 0 0;
+} 
+
+#rd {
+    transform-origin: 0 100%;
+}
+
 .toogle span {
+    z-index: -1;
     display: none;
     width: 28px;
     height: 3px;
     border-radius: 15px;
     background-color: white;
+    transition: all 0.5s;
+}
+
+#st, #rd{
+    transform-origin : 0 0;
 }
 
 .main1{
@@ -143,6 +157,14 @@ nav ul li a:hover{
     margin-top: 60px;
     display: flex;
     justify-content: space-around;
+    margin-bottom: 100px;
+}
+
+.gab {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 2%;
 }
 
 #jenjang:hover{
@@ -160,12 +182,6 @@ nav ul li a:hover{
 #jenjang {
     width: 120px;
     height: 120px;
-}
-
-.teks {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 100px;
 }
 
 #capt {
@@ -390,7 +406,6 @@ nav ul li a:hover{
     }
     
     .btn {
-        height: 2.7vh;
         font-size: 11px;
         padding: 2px;
     }
@@ -422,15 +437,12 @@ nav ul li a:hover{
     
     .icon {
         margin-top: 20px;
+        margin-bottom: 45px;
     }
     
     #jenjang {
         width: 70px;
         height: 70px;
-    }
-    
-    .teks {
-        margin-bottom: 45px;
     }
     
     #capt {
@@ -585,17 +597,13 @@ nav ul li a:hover{
 
 @media (max-width:576px){
 
-    body nav {
-        position: fixed;
-        width: 100%;
-    }
-
     #logo {
         margin-top: 5px;
+        width: 70%;
     }
 
     .toogle {
-        margin-top: 16px;
+        margin-top: 20px;
         margin-right: 12px;
     }
     
@@ -604,19 +612,36 @@ nav ul li a:hover{
     }
 
     nav ul{
-        display: none;
-        margin-top: 10px;
-        width: 50%;
-        margin-right: 18px;
+        right: 0px;
+        position: absolute;
+        flex-direction: column;
+        background-color: #4E85E3;
+        top: 0;
+        height: 50vh;
+        width: 65%;
+        margin-right: -3%;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 15%;
+        z-index: -1;
+        padding-bottom: 80%;
+        transform: translateX(100%);
+        transition: all 1s;
+    }
+
+    .slide {
+        transform: translateX(0);
+        transition: all 1s;
     }
     
-    nav ul li a{
-        font-size: 12px;
+    #menu {
+        font-size: 15px; 
     }
     
     .btn {
-        height: 2.7vh;
-        font-size: 11px;
+        height: 5.5vh;
+        width: 24vh;
+        font-size: 14px;
         padding: 2px;
     }
 
@@ -625,33 +650,55 @@ nav ul li a:hover{
     }
 
     .main1{
-        background-size: 160%;
+        background-size: 230%;
     }
     
     .atas h1 {
-        font-size: 24.5px;
+        margin-top: 8%;
+        font-size: 30px;
     }
     
     .p {
-        font-size: 11px;
-        margin-bottom: 10px;
+        font-size: 13px;
+        margin-bottom: 8%;
         width: 92%;
         margin-left: auto;
         margin-right: auto;
     }
 
     .search {
-        width: 60%;
+        width: 65%;
+        height: 37px;
+        font-size: 13px;
     }
     
+    .icon{
+        margin-top: 18%;
+        width: 85%;
+        flex-wrap: wrap;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 18%;
+    }
+
     #jenjang {
         margin-top: 3%;
-        width: 55px;
-        height: 55px;
+        width: 95px;
+        height: 95px;
     }
     
     #capt {
-        font-size: 10px;
+        font-size: 13px;
+    }
+
+    #last1 {
+        margin-right: -15%;
+        margin-top: 5%;
+    } 
+    
+    #last2 {
+        margin-left: -15%;
+        margin-top: 5%;
     }
     
     #capt:focus {
@@ -659,74 +706,116 @@ nav ul li a:hover{
     }
     
     .main2 h1 {
-        font-size: 24px;
+        width: 85%;
+        font-size: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5%;
     }
     
     .p2 {
-        font-size: 11px;
+        font-size: 13px;
         width: 70%;
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: 15%;
     }
 
     .pilih {
         margin-left: 5%;
         margin-right: 5%;
-        margin-bottom: 10px;
+        margin-bottom: 18px;
         padding-left: 35px;
         padding-right: 21px;
     }
 
-    #last_f {
+    #last_f{
         display: none;
     }
     
-    .swipex {
-        padding-left: 10px;
-        padding-right: 10px;
+    .swipe {
+        display: none;
     }
     
-    .swipe {
-        width: 27px;
-        height: 27px;
+    .pilih {
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 18%;
     }
 
-    #kiri{
+    .row1{
+        padding-top: 30px
+    }
+
+    .row2 {
+        margin-top: 5%;
+        padding-bottom: 30px;
+    }
+    
+    .flag{
+        width: 100%;
         margin-left: -5%;
     }
 
-    #kanan{
-        margin-right: -0.5%;
+    .main3{
+        background-size: 200%;
     }
-    
-    .row1 {
-        display: flex;
-        justify-content: space-around;
-        padding-top: 10px;
-    }
-    
-    .row2 {
-        margin-top:-20px;
-        padding-bottom: 4px;
-    }
-    
+
     .review {
-        font-size: 20px;
-        width: 90%;
+        font-size: 25px;
+        width: 100%;
+        margin-top: 13%;
+        margin-left: 3%;
+        margin-bottom: 8%;
     }
     
+    #pp{
+        width: 60px;
+    }
+
+    #name {
+        font-size: 15px;
+    }
+
     .con {
-        font-size: 9px;
-        margin: 2.5%;
-        width: 45%;
+        font-size: 13px;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        width: 75%;
     }
 
     #last_r{
         display: none;
     }
+
+    .tentangkami, .sosialmedia{
+        margin-left: 5%;
+    }
+
+    .judulfooter{
+        font-size: 13px;
+        text-align: center;
+    }
+
+    #pemailtk, #ptelptk, #plokasitk {
+        font-size: 11px;
+    }
+
+    #inputfooter{
+        width: 130px;
+        font-size: 10px;
+    }
+
+    #icon1, .imgsosmedfooter {
+        width: 20px;
+        height: 20px;
+    }
+
+    .footer, .lastfooter {
+        padding-right: 6%;
+    }
     
     .terbaru, .populer{
         display: none;
     }
-
 }

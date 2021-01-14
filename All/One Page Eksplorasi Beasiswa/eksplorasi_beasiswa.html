@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ekplorasi Beasiswa</title>
     <link rel="stylesheet" href="eksplorasi.css">
+    <script src="ekplorasi.js"></script>
 </head>
 
 <body>
@@ -13,16 +14,16 @@
             <img id="logo" src="logo infobeasiswa 3.png">
         </div>
         <ul>
-            <li><a href="../../index.html" >Beranda</a></li>
-            <li><a href="../One Page Eksplorasi Beasiswa/eksplorasi_beasiswa.html">Eksplor Beasiswa</a></li>
-            <li><a href="../../index.html" >Seminar</a></li>
-            <li><a href="../Login/login.html"><button type="menu" class="btn">Masuk/Daftar</button></a></li>
+            <li onclick="normal()" ><a href="../../index.html" id="menu" >Beranda</a></li>
+            <li onclick="normal()" ><a href="../One Page Eksplorasi Beasiswa/eksplorasi_beasiswa.html" id="menu">Eksplor Beasiswa</a></li>
+            <li onclick="normal()" ><a href="../../index.html" id="menu" >Seminar</a></li>
+            <li onclick="normal()" ><a href="../Login/login.html"><button type="menu" class="btn">Masuk/Daftar</button></a></li>
         </ul>
 
-        <div class="toogle">
-            <span></span>
-            <span></span>
-            <span></span>
+        <div onclick="show_menu()" class="toogle">
+            <span onclick="show_menu()" id="st"></span>
+            <span onclick="show_menu()" id="nd"></span>
+            <span onclick="show_menu()" id="rd"></span>
         </div>
     </nav>
 
@@ -38,18 +39,26 @@
         </div>
         
         <div class="icon">
-            <a href="../Beasiswa_List Beasiswa (Jenjang)/list beasiswa jenjang.html" id="jenjang"><img id="jenjang" src="Group 187.png"></a>
-            <a href="../Beasiswa_List Beasiswa (Jenjang)/list beasiswa jenjang.html" id="jenjang"><img id="jenjang" src="Group 183.png"></a>
-            <a href="../Beasiswa_List Beasiswa (Jenjang)/list beasiswa jenjang.html" id="jenjang"><img id="jenjang" src="Group 182.png"></a>
-            <a href="../Beasiswa_List Beasiswa (Jenjang)/list beasiswa jenjang.html" id="jenjang"><img id="jenjang" src="Group 208.png"></a>
-            <a href="../Beasiswa_List Beasiswa (Jenjang)/list beasiswa jenjang.html" id="jenjang"><img id="jenjang" src="Group 226.png"></a>
-        </div>
-        
-        <div class="teks">
-            <a href="../Beasiswa_List Beasiswa (Jenjang)/list beasiswa jenjang.html" id="capt"><b>Pelajar</b></a>                <a href="../Beasiswa_List Beasiswa (Jenjang)/list beasiswa jenjang.html" id="capt"><b>Diploma</b></a>
-            <a href="../Beasiswa_List Beasiswa (Jenjang)/list beasiswa jenjang.html" id="capt"><b>Sarjana</b></a>
-            <a href="../Beasiswa_List Beasiswa (Jenjang)/list beasiswa jenjang.html" id="capt"><b>Magister</b></a>
-            <a href="../Beasiswa_List Beasiswa (Jenjang)/list beasiswa jenjang.html" id="capt"><b>Doktor</b></a>
+            <div class="gab">
+                <a href="../Beasiswa_List Beasiswa (Jenjang)/list beasiswa jenjang.html" id="jenjang"><img id="jenjang" src="Group 187.png"></a>
+                <a href="../Beasiswa_List Beasiswa (Jenjang)/list beasiswa jenjang.html" id="capt"><b>Pelajar</b></a>               
+            </div>
+            <div class="gab">
+                <a href="../Beasiswa_List Beasiswa (Jenjang)/list beasiswa jenjang.html" id="jenjang"><img id="jenjang" src="Group 183.png"></a>
+                <a href="../Beasiswa_List Beasiswa (Jenjang)/list beasiswa jenjang.html" id="capt"><b>Diploma</b></a>
+            </div>
+            <div class="gab">
+                <a href="../Beasiswa_List Beasiswa (Jenjang)/list beasiswa jenjang.html" id="jenjang"><img id="jenjang" src="Group 182.png"></a>
+                <a href="../Beasiswa_List Beasiswa (Jenjang)/list beasiswa jenjang.html" id="capt"><b>Sarjana</b></a>
+            </div>
+            <div class="gab" id="last1">
+                <a href="../Beasiswa_List Beasiswa (Jenjang)/list beasiswa jenjang.html" id="jenjang"><img id="jenjang" src="Group 208.png"></a>
+                <a href="../Beasiswa_List Beasiswa (Jenjang)/list beasiswa jenjang.html" id="capt"><b>Magister</b></a>
+            </div>
+            <div class="gab" id="last2">
+                <a href="../Beasiswa_List Beasiswa (Jenjang)/list beasiswa jenjang.html" id="jenjang"><img id="jenjang" src="Group 226.png"></a>
+                <a href="../Beasiswa_List Beasiswa (Jenjang)/list beasiswa jenjang.html" id="capt"><b>Doktor</b></a>
+            </div>
         </div>
     </div>
     
@@ -62,7 +71,7 @@
             <div class="row1" id="slider">
                 <a href="../Beasiswa_List Beasiswa (Negara)/list beasiswa negara.html"><img class="flag" src="korea.png"></a>
                 <a href="../Beasiswa_List Beasiswa (Negara)/list beasiswa negara.html"><img class="flag" src="amerika.png"></a>
-                <a href="../Beasiswa_List Beasiswa (Negara)/list beasiswa negara.html"><img class="flag" src="kanada.png"></a>
+                <a href="../Beasiswa_List Beasiswa (Negara)/list beasiswa negara.html"><img class="flag" id="last_f" src="kanada.png"></a>
                 <a href="../Beasiswa_List Beasiswa (Negara)/list beasiswa negara.html"><img class="flag" id="last_f" src="spanyol.png"></a>
             </div>
             <div class="swipex">
@@ -72,7 +81,7 @@
             <div class="row2" id="slider">
                 <a href="../Beasiswa_List Beasiswa (Negara)/list beasiswa negara.html"><img class="flag" src="china.png"></a>
                 <a href="../Beasiswa_List Beasiswa (Negara)/list beasiswa negara.html"><img class="flag" src="inggris.png"></a>
-                <a href="../Beasiswa_List Beasiswa (Negara)/list beasiswa negara.html"><img class="flag" src="jerman.png"></a>
+                <a href="../Beasiswa_List Beasiswa (Negara)/list beasiswa negara.html"><img class="flag" id="last_f" src="jerman.png"></a>
                 <a href="../Beasiswa_List Beasiswa (Negara)/list beasiswa negara.html"><img class="flag" id="last_f" src="india.png"></a>
             </div>
             </div>
@@ -83,9 +92,8 @@
         <h1 class="review">Apa yang Dikatakan Temanmu Tentang infobeasiswa.com?</h1>
     </div>
     <div class="main3">
-
         <div class="main">
-            <div class="con">
+            <div class="con" id="last_r">
                 <img id="pp" src="Group 210.png">
                 <p><b id="name">Brenanda Putri I.</b><br>
                 Terimakasih infobeasiswa.com, situs ini sangat memudahkan saya 
