@@ -1,23 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daftar</title>
     <link rel="stylesheet" type="text/css" href="daftar.css">
+    <script src="https://kit.fontawesome.com/64d58efce2.js"></script>
+    <script src="daftar.js"></script>
 </head>
 <body>
     <div id="all">
         <div id="daftar">
             <div id="gambar">
                 <img src="daftar login.png" class="gambar">
+                <img src="daftar login 2.png" class="gambar2">
             </div>
-            <div id="form">
-                <h1><b>Daftar sekarang</b></h1>
-                <input type="text" placeholder="Nama lengkap" class="inputan" id="awalinputan">
-                <input type="email" placeholder="Email" class="inputan" id="nextinputan1">
-                <input type="number" placeholder="No. Handphone" class="inputan" id="nextinputan2">
-                <input type="password" placeholder="Password" class="inputan" id="nextinputan3">
-                <input type="password" placeholder="Konfirmasi password" class="inputan" id="nextinputan4">
-                <a href="../Login/login.html"><button type="button" value="Daftar" id="tombol"><b>Daftar</b></button></a>
+            <form class="form" id="form">
+                <h1 id="judulmasuk"><b>Daftar sekarang</b></h1>
+                <div class="form-control">
+                    <input type="text" placeholder="Nama lengkap" id="nama">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                </div>
+                <div class="form-control" id="formnext">
+                    <input type="email" placeholder="Email" id="email">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                </div>
+                <div class="form-control" id="formnext">
+                    <input type="number" placeholder="No. Handphone" id="no">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                </div>
+                <div class="form-control" id="formnext">
+                    <input type="password" placeholder="Password" id="pass">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                </div>
+                <div class="form-control" id="formnext">
+                    <input type="password" placeholder="Konfirmasi password" id="konfirmasi">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                </div>
+                <button type="button" onclick="check()" id="buttonmasuk"><b>Daftar</b></button>
                 <p id="medsos">Atau bisa mendaftar dengan akun media sosialmu</p>
                 <div id="medsosgambar1">
                     <img src="facebook.png" class="medsosgambar">
@@ -28,6 +52,13 @@
                     <p id="punya">Sudah mempunyai akun?</p>
                     <p id="masuk"><a href="../Login/login.html">Masuk</a></p>
                 </div>
+            </form>
+            <div id="valpopup" class="valpopup1">
+                <div class="back"></div>
+                <i class="fas fa-check-circle"></i>
+                <p id="teks">Akun berhasil dibuat, Silakan Login</p>
+                <a href="../Login/login.html"><button type="submit" id="buttonpopup" onclick="check()">Login</button></a>
+            </div>
         </div>
     </div>
 </body>
