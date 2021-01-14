@@ -14,94 +14,96 @@ body {
     font-family: "Font Digital";
 }
 
-.gambar{
-    width: 100%;
-    height: 100vh;  
-    background-size: cover;
-}
-
-#navbar{
-    width: 100%;
-    height: 50%; 
-    top: 0px;
-}
-
-header{
-    width: 100%;
-    height: 11%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    transition: background-color .5s ease;
-    z-index: 1000;
+nav{
+    display: flex;
     background-color: #4E85E3;
-    box-shadow: 0px 0px 7px 0px black;
+    justify-content: space-around;
+    box-shadow: 0px 0px 6px 0px black;
+    position: fixed;
+    width: 100%;
 }
-
 
 #logo{
-    width: 20%;
-    padding-top: 10px;
-    padding-left: 10px;
+    width: 80%;
+    padding: 5px;
+    margin-left: -42%;
+    margin-top: 5px;
 }
 
-#navbar1{
+nav ul{
     display: flex;
-    width: 100%;
-    padding-left: 18px;
+    margin-top: 18px;
+    list-style: none;
+    justify-content: space-between;
+    width: 40%;
+    margin-right: -30%;
 }
 
-.anavbar{
+nav ul li a{
+    color: white;
     text-decoration: none;
-    font-family: "poppins";
-    font-size: 2.5vh;
-    color: #FFFF;
-    padding-top: 10px;
-    padding-bottom: 20px;
-    padding-left: 30px;
-    margin-top: -3.4%;
 }
 
-.anavbar:hover {
+nav ul li a:hover{
     color: #2756a8;
 }
 
-#beranda {
-    margin-left: 57%;
-}
-
 .btn {
-    border-radius: 40px;
     outline: none;
     border-width: 0px;
-    font-family: "poppins";
+    font-family: "Font Digital";
     color: white;
-}
-
-#login {
     background-color: #FCC453;
-    width: 10%;
+    width: 118%;
     height: 5.5vh;
     border-radius: 50px;
-    margin-top: -3.1%;
-    margin-left: 2%;
-    font-size: 2.3vh;
-    position: absolute;
+    font-size: 2vh;
+    padding: 5px;
+    margin-top: -5px;
 }
 
-#login:hover{
+.btn:hover{
     background-color: #98BEFF;
 }
 
-#login:focus {
+.btn:focus {
     background-color: #275bb6;
+}
+
+.toogle {
+    display: flex;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#st{
+    transform-origin: 0 0;
+} 
+
+#rd {
+    transform-origin: 0 100%;
+}
+
+.toogle span {
+    z-index: -1;
+    display: none;
+    width: 28px;
+    height: 3px;
+    border-radius: 15px;
+    background-color: white;
+    transition: all 0.5s;
+}
+
+#st, #rd{
+    transform-origin : 0 0;
 }
 
 #juduljenjang{
     font-family: "poppins bold";
     color: #FCC453;
     margin-left: 2%;
-    margin-top: 5.5%;
     font-size: 7vh;
 }
 
@@ -300,3 +302,133 @@ header{
     margin-top: -0.1%;
     width: 150%;
 } 
+
+/* Device handphone 360 x 560 */
+@media screen and (max-width:576px){
+
+    #logo {
+        margin-top: 5px;
+        width: 50%;
+        margin-left: -1%;
+    }
+
+    .toogle {
+        margin-top: 15px;
+        margin-right: 12px;
+    }
+    
+    .toogle span {
+        display: block;
+    }
+
+    nav ul{
+        right: 0px;
+        position: absolute;
+        flex-direction: column;
+        background-color: #4E85E3;
+        top: 0;
+        height: 50vh;
+        width: 65%;
+        margin-right: -3%;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 10%;
+        z-index: -1;
+        padding-bottom: 80%;
+        transform: translateX(100%);
+        transition: all 1s;
+    }
+
+    .slide {
+        transform: translateX(0);
+        transition: all 1s;
+    }
+    
+    #menu {
+        font-size: 15px; 
+    }
+    
+    .btn {
+        height: 5.5vh;
+        width: 24vh;
+        font-size: 14px;
+        padding: 2px;
+    }
+    #juduljenjang{
+        font-size: 30px;
+        margin-top: 10%;
+        margin-left: 5%;
+    }
+    .logojenjang{
+        width: 40%;
+        height: 40%;
+        margin-left: 30%;
+        margin-top: 3%;
+    }
+    .isijenjang1,.isijenjang2,.isijenjang3{
+        display: block;
+        margin-left: -5%;
+        width: 100%;
+        height: 34%;
+    }
+    .judpil{
+        font-size: 14px;
+    }
+    .p1, .p2{
+        font-size: 12px;
+    }
+    .hr,#hr{
+        width: 120%;
+        margin-left: 20%;
+    }
+    #filter{
+        margin-left: -5%;
+    }
+    .isifil{
+        margin-top: -5%;
+    }
+    .judulisijenjang{
+        width: 150%;
+        font-size: 14px;
+        text-align: center;
+        margin-top: 15%;
+    }
+    .isiisijenjang{
+        font-size: 12px;
+        width: 150%;
+        text-align: center;
+        margin-top: 3%;
+    }
+    .bacaanisijenjang{
+        margin-left: 1%;
+    }
+    #bulantahun{
+        font-size: 12px;
+        width: 120%;
+        margin-left: 190%;
+        color: #4E85E3;
+    }
+    .jenjangnyaungu,.jenjangnyatosca,.jenjangnyaoren,.jenjangnyamerah{
+        display: none;
+    }
+    .selengkapnya{
+        font-size: 12px;
+        height: 25px;
+        margin-left: 120%;
+    }
+    #bulantahun2{
+        margin-left: 55%;
+    }
+    #bulantahun3{
+        margin-left: 70%;
+    }
+    .bulantahun2{
+        margin-left: -00%;
+    }
+    .isijenjang2{
+        height: 36%;
+    }
+    .isijenjang2 #bulantahun, .isijenjang3 #bulantahun{
+        margin-left: 140%;
+    }
+}
