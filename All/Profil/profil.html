@@ -3,9 +3,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile Saya</title>
     <link rel="stylesheet" href="profil.css">
+    <script src="profil.js"></script>
 </head>
 
 <body>
+    <nav>
+        <div>
+            <img id="logo" src="logo infobeasiswa 3.png">
+        </div>
+        <ul>
+            <li onclick="normal()" ><a href="../../index.html" id="menu" >Beranda</a></li>
+            <li onclick="normal()" ><a href="../One Page Eksplorasi Beasiswa/eksplorasi_beasiswa.html" id="menu">Eksplor Beasiswa</a></li>
+            <li onclick="normal()" ><a href="../../index.html" id="menu" >Seminar</a></li>
+            <li onclick="normal()" ><a href="../Login/login.html"><button type="menu" class="btn">Masuk/Daftar</button></a></li>
+        </ul>
+
+        <div onclick="show_menu()" class="toogle">
+            <span onclick="show_menu()" id="st"></span>
+            <span onclick="show_menu()" id="nd"></span>
+            <span onclick="show_menu()" id="rd"></span>
+        </div>
+    </nav>
+
     <div class="mainx">
         <div class="utama">
             <img class="sampul" src="Group 244.png">
@@ -23,24 +42,24 @@
             <hr id="garis">
             <div class="info">
                 <div class="left">
-                    <p>Pendidikan Terakhir</p>
-                    <p>Status</p>
-                    <p>Email</p>
-                    <p>Nomor Telepon</p>
+                    <p><b>Pendidikan Terakhir</b></p>
+                    <p><b>Status</b></p>
+                    <p><b>Email</b></p>
+                    <p><b>Nomor Telepon</b></p>
                 </div>
                 <div class="right">
-                    <p><b>Lulus SMA Taruna Bangsa 05 Bandung Tahun 2017</b></p>
+                    <p>Lulus SMA Taruna Bangsa 05 Bandung Tahun 2017</p>
                     <hr>
-                    <p><b>Sedang Menempuh S1 Fakultas Ekonomi Bisnis Universitas X</b></p>
+                    <p>Sedang Menempuh S1 Fakultas Ekonomi Bisnis Universitas X</p>
                     <hr>
-                    <p><b>f******@gmail.com</b></p>
+                    <p>f******@gmail.com</p>
                     <hr>
-                    <p><b>+62*********38</b></p>
+                    <p>+62*********38</p>
                     <hr>
                 </div>
             </div>
         </div>
-
+    
         <div class="menux">
             <button type="menu" class="menu" id="first">Beasiswa Saya</button>
             <button type="menu" class="menu">Seminar Saya</button>
@@ -48,17 +67,6 @@
             <button type="menu" class="menu">Seminar Favorit Saya</button>
             <button type="menu" class="menu">Beri Ulasan</button>
             <a href="../Input Informasi Seminar/input seminar.html"><button type="menu" class="review">Upload Seminar</button></a>
-        </div>
-    </div>
-
-    <div id="navbar">
-        <img id="logo" src="logo infobeasiswa 3.png">
-        <div id="navbar1">
-            <a href="../../index.html"id="beranda">Beranda</a>
-            <a href="../One Page Eksplorasi Beasiswa/eksplorasi_beasiswa.html" id="kalender">Eksplor Beasiswa</a>
-            <a href="../../index.html" id="seminar">Seminar</a>
-            <a href="../Profil/profil.html" id="foto_profil"><img class="foto_profil" src="Group 210.png" alt=""></a>
-            <a href="../Profil/profil.html" id="ism">Azran</a>
         </div>
     </div>
 </body>

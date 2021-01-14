@@ -8,72 +8,106 @@
     src: url(Poppins-Bold.ttf);
 }
 
-body {
+* {
     margin: 0;
     padding: 0;
-    font-family: "poppins";
-    background-color: white;
 }
 
-#navbar{
+body {
+    font-family: "poppins";
+}
+
+nav{
+    display: flex;
+    background-color: #4E85E3;
+    justify-content: space-around;
+    box-shadow: 0px 0px 6px 0px black;
     position: fixed;
     width: 100%;
-    height: 11%;
-    background-color: #4E85E3;
-    box-shadow: 0px 0px 6px 0px black;
+    z-index: 1;
+    top: 0;
 }
 
 #logo{
-    width: 20%;
-    padding-top: 10px;
-    padding-left: 10px;
+    width: 80%;
+    padding: 5px;
+    margin-left: -42%;
+    margin-top: 5px;
 }
 
-#navbar1{
+nav ul{
     display: flex;
-    width: 100%;
-    padding-left: 20px;
+    list-style: none;
+    justify-content: space-between;
+    width: 40%;
+    margin-right: -30%;
+    align-items: center;
 }
 
-a{
+nav ul li a{
+    color: white;
     text-decoration: none;
-    font-family: "poppins";
-    font-size: 2.5vh;
-    color: #FFFF;
-    padding-top: 10px;
-    padding-bottom: 20px;
-    padding-left: 30px;
-    margin-top: -3.4%;
 }
 
-a:hover {
+nav ul li a:hover{
     color: #2756a8;
 }
 
-#beranda {
-    margin-left: 57%;
+.btn {
+    outline: none;
+    border-width: 0px;
+    font-family: "poppins";
+    color: white;
+    background-color: #FCC453;
+    width: 118%;
+    height: 5.5vh;
+    border-radius: 50px;
+    font-size: 2vh;
+    padding: 5px;
+    margin-top: -5px;
 }
 
-#foto_profil {
-    margin-top: -4.2%;
+.btn:hover{
+    background-color: #98BEFF;
 }
 
-.foto_profil{
-    width: 70%;
+.btn:focus {
+    background-color: #275bb6;
 }
 
-#ism {
-    font-size: 3.3vh;
-    color: #FCC453;
-    font-family: "poppins bold";
-    margin-top: -3.5%;
-    margin-left: -37px;
+.toogle {
+    display: flex;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#st{
+    transform-origin: 0 0;
+} 
+
+#rd {
+    transform-origin: 0 100%;
+}
+
+.toogle span {
+    z-index: -1;
+    display: none;
+    width: 28px;
+    height: 3px;
+    border-radius: 15px;
+    background-color: white;
+    transition: all 0.5s;
+}
+
+#st, #rd{
+    transform-origin : 0 0;
 }
 
 .mainx {
-    position: absolute;
     display: flex;
-    margin-bottom: 30px;
+    justify-content: space-evenly;
 }
 
 .utama {
@@ -82,42 +116,38 @@ a:hover {
     border-radius: 20px;
     padding-left: 30px;
     padding-right: 30px;
-    margin-top: 110px;
+    margin-top: 8%;
     padding-top: 50px;
-    width: 800px;
-    margin-left: 60px;
+    width: 58.5%;
 }
 
 .sampul {
     position: absolute;
     margin-left: -30px;
     margin-top: -50px;
-    width: 861px;
+    width: 63%;
 }
 
 .bgpp {
     display: flex;
     position: relative;
+    justify-content: space-around;
 }
 
 .fp {
-    width: 150px;
-    height: 150px;
-    margin-left: 30px;
+    width: 140px;
+    height: 140px;
 }
 
 .bio {
     color: white;
     font-size: 18px;
-    padding-left: 40px;
 }
 
 #nama {
     font-size: 40px;
     color: white;
     font-family: "poppins bold";
-    margin-bottom: -20px;
-    padding-bottom: -20px;
 }
 
 .head {
@@ -126,19 +156,16 @@ a:hover {
     font-family: "poppins bold";
     color: #FCC453;
     padding-top: 45px;
+    justify-content: space-between;
 }
 
 .edit {
     width: 35px;
     height: 35px;
-    margin-top: 40px;
-    margin-left: 580px;
 }
 
 #garis {
     border: 1px solid rgb(216, 216, 216);
-    padding-top: -20px;
-    margin-top: -20px;
 }
 
 .info {
@@ -146,18 +173,24 @@ a:hover {
     padding: 20px;
     color: rgb(161, 161, 161);
     font-size: 15px;
-    padding-top: -10px;
-    margin-top: -10px;
+    justify-content: space-between;
+    margin-top: -3%;
 }
 
 .left {
-    padding-right: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: -1%;
+}
+
+.left p {
+    margin-bottom: 2.8%;
 }
 
 hr {
     border: 1px solid rgb(216, 216, 216);
-    margin-top: -12px;
-    padding-top: -12px;
+    margin-bottom: 2.6%;
 }
 
 .menux {
@@ -165,12 +198,11 @@ hr {
     box-shadow: 0px 0px 5px 0px grey;
     background-color: white;
     width: 300px;
-    margin-left: 75px;
     margin-top: 110px;
-}
-
-#first {
-    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .menu {
@@ -181,8 +213,6 @@ hr {
     font-size: 16px;
     color: rgb(161, 161, 161);
     width: 250px;
-    margin-left: 25px;
-    margin-top: 20px;
     padding-top: 15px;
     padding-bottom: 15px;
 }
@@ -207,8 +237,6 @@ hr {
     color: white;
     width: 200px;
     height: 40px;
-    margin-left: 25px;
-    margin-top: 40px;
     font-family: "poppins";
 }
 
@@ -220,3 +248,144 @@ hr {
     background-color: #2756a8;
     outline: none;
 }
+
+@media (max-width:576px){
+
+    #logo {
+        margin-top: 6px;
+        width: 70%;
+        margin-left: 2%;
+    }
+
+    .toogle {
+        margin-top: 20px;
+        margin-right: 12px;
+    }
+    
+    .toogle span {
+        display: block;
+    }
+
+    nav ul{
+        right: 0px;
+        position: absolute;
+        flex-direction: column;
+        background-color: #4E85E3;
+        top: 0;
+        height: 50vh;
+        width: 65%;
+        margin-right: -3%;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 15%;
+        z-index: -1;
+        padding-bottom: 80%;
+        transform: translateX(100%);
+        transition: all 1s;
+    }
+
+    .slide {
+        transform: translateX(0);
+        transition: all 1s;
+    }
+
+    .mainx {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .utama {
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: 27%;
+        padding-top: 30px;
+        width: 85%;
+    }
+    
+    .sampul {
+        margin-left: -2.7%;
+        margin-top: -8.3%;
+        width: 90.5%;
+        height: 26%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .bgpp {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-top: -5%;
+    }
+    
+    .fp {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .bio {
+        font-size: 13px;
+    }
+    
+    #nama {
+        font-size: 25px;
+    }
+
+    .head {
+        margin-top: -5%;
+    }
+
+    #profilku {
+        font-size: 18px;
+    }
+    
+    .edit {
+        width:30px;
+        height: 30px;
+    }
+    
+    .info {
+        display: flex;
+        padding: 5px;
+        font-size: 13px;
+    }
+    
+    .left {
+        margin-top: -1%;
+        margin-right: 10%;
+    }
+    
+    .left p:nth-child(2) {
+        margin-bottom: 80%;
+    }
+    
+    hr {
+        margin-bottom: 10%;
+    }
+    
+    .menux {
+        border-radius: 15px;
+        width: 90%;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    
+    .menu {
+        border-radius: 10px;
+        font-size: 14px;
+        width: 87%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        padding-bottom: 5px;
+        padding-top: 5px;
+    }
+    
+    .review {
+        margin-top: 5%;
+        font-size: 14px;
+        width:200px;
+        height: 35px;
+    }
+
+}  
