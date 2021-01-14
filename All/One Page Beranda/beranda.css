@@ -18,15 +18,15 @@
     box-shadow: 0px 0px 8px black;
 }
 
-.aktif #buttonId{
-    background-color: #FCC453
+.aktif .btn{
+    background-color: #FCC453;
 }
 
-#buttonId:hover{
+.btn:hover{
     background-color: #98BEFF;
 }
 
-#buttonId:focus {
+.btn:focus {
     background-color: #275bb6;
 }
 
@@ -36,77 +36,123 @@ body {
     font-family: "Font Digital";
 }
 
+nav{
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    width: 100%;
+    transition: background-color .5s ease;
+    z-index: 1000;
+}
+
+#logo{
+    width: 80%;
+    padding: 5px;
+    margin-left: -40%;
+    margin-top: 5px;
+}
+
 .gambar{
     width: 100%;
     height: 100vh;  
     background-size: cover;
 }
 
-#navbar{
-    position: absolute;
-    width: 100%;
-    height: 50%; 
-    top: 0px;
+.gambar2{
+    display: none;
 }
 
-header{
-    width: 100%;
-    height: 11%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    transition: background-color .5s ease;
-    z-index: 1000;
+.gambar3{
+    display: none;
 }
 
-#logo{
-    width: 20%;
-    padding-top: 10px;
-    padding-left: 10px;
-}
-
-#navbar1{
+nav ul{
     display: flex;
-    width: 100%;
+    margin-top: 18px;
+    list-style: none;
+    justify-content: space-between;
+    width: 40%;
+    margin-right: -28%;
 }
 
-.anavbar{
+nav ul li a{
+    color: white;
     text-decoration: none;
-    font-size: 2.5vh;
-    color: #FFFF;
-    padding-top: 10px;
-    padding-bottom: 20px;
-    padding-left: 30px;
-    margin-top: -3.5%;
 }
 
-.anavbar:hover {
+nav ul li a:hover{
     color: #2756a8;
 }
 
-.anavbar:focus{
-    text-decoration: underline;
-}
-
-#beranda {
-    margin-left: 57%;
-}
-
-#buttonId {
-    background-color: #4E85E3;
-    width: 10%;
-    height: 5.5vh;
-    border-radius: 50px;
-    margin-top: -3%;
-    padding-top: -3%;
-    margin-left: 2%;
-    font-size: 2.5vh;
-    font-family: "Font Digital";
-    border-radius: 40px;
+.btn {
     outline: none;
     border-width: 0px;
+    font-family: "Font Digital";
     color: white;
+    background-color: #4E85E3;
+    width: 118%;
+    height: 5.5vh;
+    border-radius: 50px;
+    font-size: 2vh;
+    padding: 5px;
+    margin-top: -5px;
+}
+
+.btn:hover{
+    background-color: #98BEFF;
+}
+
+.btn:focus {
+    background-color: #275bb6;
+}
+
+.toogle {
+    display: flex;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.toogle input{
+    width: 30px;
+    height: 30px;
     position: absolute;
+    opacity: 0;
+}
+#st{
+    transform-origin: 0 0;
+} 
+
+#rd {
+    transform-origin: 0 100%;
+}
+
+.toogle input:checked ~ #st{
+    transform: rotate(45deg) translate(-1.5px, -1.5px);
+}
+
+.toogle input:checked ~ #nd{
+    display: none;
+}
+
+.toogle input:checked ~ #rd{
+    transform: rotate(-45deg) translate(-1.5px, -0.5px);
+}
+
+.toogle span {
+    z-index: -1;
+    position: relative;
+    display: none;
+    width: 28px;
+    height: 3px;
+    border-radius: 15px;
+    background-color: white;
+    transition: all 0.5s;
+}
+
+#st, #rd{
+    transform-origin : 0 0;
 }
 
 #welkam {
@@ -129,6 +175,7 @@ header{
     padding: 5px;
     color: white;
     font-size: 17px;
+    width:630px;
 }
 
 #btn {
@@ -194,6 +241,10 @@ header{
     width: 380px;
 }
 
+#list3{
+    border-radius: 65px;
+}
+
 #list1, #list2, #list3{
     height: 93%;
     width: 90%;
@@ -205,58 +256,18 @@ header{
     margin-left: 8%;
 }
 
-#list3{
-    border-radius: 56px;
-    background-image: url("seminar3.png");
-    cursor: pointer;
-}
-
-.list3 #isilist3, .list3 #selengkapnya{
-    visibility: hidden;
-}
-
-#isilist3{
-    text-align: center;
-    font-family: "Font Digital";
-    color: white;
-    width: 230px;
-    margin-left: 10%;
-    padding-top: 35%;
-}
-
-#selengkapnya{
-    background-color: #FCC453;
-    color: white;
-    font-family: "Font Digital";
-    border: none;
-    width: 180px;
-    height: 30px;
-    border-radius: 30px;
-    margin-left: 18%;
-    outline: none;
-}
-
-#list3 #isilist3::after, #list3 #selengkapnya::after{
-    content: "";
-}
-
-#list3 #isilist3 .appear{
-    visibility: visible;
-    background-image: url("seminar3\ v2.png");
-}
-
 #kanan{
     margin-left: 3%;
 }
 
 #kalfil{
-    display: flex;
     font-family: "Font Digital";
 }
 
 #kalender{
     text-align: center;
-    margin-left: 8%;
+    justify-content: center;
+    display: flex;
 }
 
 .kolom1{
@@ -279,7 +290,7 @@ header{
 }
 
 .bulan .tabpopup{
-    visibility: hidden;
+    display: none;
     position: absolute;
     border: 3px solid #A1A2A5;
     border-radius: 30px;
@@ -313,11 +324,6 @@ header{
 .bulan .tabpopup::after{
     content: "";
     position: absolute;
-}
-
-.bulan .tabpopup .show2{
-    visibility: visible;
-    animation: fadeIn 1s;
 }
 
 #hari{
@@ -368,7 +374,7 @@ header{
 }
 
 .redpopup .popuptext{
-    visibility: hidden;
+    display: none;
     position: absolute;
     background-color: #A1A2A5;
     color: #FFFF;
@@ -404,13 +410,8 @@ header{
 }
 
 .redpopup .popuptext::after{
-    content: "";
+    content: " ";
     position: absolute;
-}
-
-.redpopup .show{
-    visibility: visible;
-    animation: fadeIn 1s;
 }
 
 .green{
@@ -434,48 +435,6 @@ header{
     border: 1.5px solid white;
     font-size: 3.5vh;
     width: 120px;
-}
-
-#filter{
-    margin-left: 5%;
-}
-
-#pilfil{
-    display: flex;
-}
-
-#fil{
-    color: #4E85E3;
-    margin-left: 35%;
-}
-
-.judpil{
-    color: #A1A2A5;
-    margin-left: 30%;
-}
-
-.pil,.pil1,.p1,.p2{
-    color: #A1A2A5;
-}
-
-.pil1,.p1{
-    margin-top: -1%;
-}
-
-.pil,.p2{
-    margin-top: -15%;
-}
-
-.pil1,.pil{
-    margin-left: 20%;
-}
-
-.p1,.p2{
-    width: 150%;
-}
-
-.pil:active,.pil1:active,.p1:active,.p2:active{
-    color: #4E85E3;
 }
 
 #garis{
@@ -507,7 +466,7 @@ header{
     background: transparent;
     border: 5px solid white;
     border-radius: 40px;
-    width: 25%;
+    width: 30%;
     height: 380px;
     margin-top: 2%;
     margin-bottom: 2%;
@@ -557,6 +516,7 @@ header{
 
 .total{
     display: flex;
+    margin-left: -17%;
 }
 
 #total1, #total2{
@@ -605,6 +565,7 @@ header{
 .isiinfo,.isiinfo1{
     font-size: 17px;
     margin-top: -3%;
+    width: 70%;
 }
 
 .hrinfo{
@@ -697,4 +658,376 @@ header{
 .lastfooter{
     background-color: #4E85E3;
     width: 100%;
+}
+
+.p2 a{
+    text-decoration: none;
+    color: #A1A2A5;
+}
+
+/* ipad */
+@media screen and (max-width:768px){
+    body{
+        width:100%;
+    }
+    /* #logo{
+        width: 40%;
+        margin-left: -122%;
+        display: none;
+    }
+    nav{
+        display: none;
+    }
+    nav ul{
+        margin-top: -1px;
+        width: 10%;
+        margin-left: -125%;
+        height: 20%;
+        background-color: #A1A2A5;
+        display: none;
+    }
+    
+    nav ul li a{
+        font-size: 12px;
+        display: none;
+    }
+    
+    .btn {
+        font-size: 11px;
+        padding: 2px;
+        display: none;
+    } */
+
+    .gambar{
+        display: none;
+    }
+
+    .gambar2{
+        display: block;
+        background-size: cover;
+    }
+    #welkam{
+        margin-left: -3%;
+        margin-top: 5%;
+    }
+    #judul{
+        width: 40%;
+        margin-top: -8%;
+    }
+    #teks{
+        margin-left: -5px;
+        width: 40%;
+        font-size: 20px;
+    }
+    #btn{
+        width: 220px;
+        height: 50px;
+        font-size: 20px;
+    }
+    #kalender{
+        margin-top: -5%;
+        margin-left: 2%;
+    }
+    .bulan{
+        font-size: 20px;
+    }
+    #hari{
+        font-size: 14px;
+    }
+    .blue,.orange,.purple,.red,.green,.grey,.kosong,.redpopup{
+        font-size: 20px;
+    }
+    .bulan .tabpopup{
+        margin-left: 20%;
+    }
+    #seminar{
+        height: 300px;
+        margin-top: -6%;
+        justify-content: center;
+    }
+    .list2{
+        display: none;
+    }
+    .list1,.list3{
+        height: 265px;
+        width: 265px;
+        border-radius: 30px;
+    }
+    #list3{
+        border-radius: 25px;
+    }
+    .list2,.list3{
+        margin-left: 3%;
+    }
+    #kanan{
+        width: 50px;
+        height: 50px;
+    }
+    #kiri{
+        width: 50px;
+        height: 50px;
+    }
+    .kasus{
+        display: none;
+    }
+    #judulinfo{
+        font-size: 30px;
+    }
+    .awaljudulinfo{
+        margin-top: -2%;
+    }
+    .hrinfo{
+        width: 97%;
+    }
+    .terbaru{
+        display: none;
+    }
+    .populer{
+        display: none;
+    }
+    .hrfooterh{
+        display: none;
+    }
+    .footer2{
+        justify-content: center;
+        height: 180px;
+        margin-left: -10%;
+    }
+}
+
+/*patokan device ukuran 360 x 560*/
+@media screen and (max-width:576px){
+    body{
+        width: 95%;
+    }
+    #logo {
+        margin-top: 5px;
+        width: 50%;
+        margin-left: 1%;
+    }
+
+    .toogle {
+        margin-top: 13px;
+        margin-right: -10%;
+        width: 30%;
+    }
+    
+    .toogle span {
+        display: block;
+    }
+
+    nav ul{
+        right: 0px;
+        position: absolute;
+        flex-direction: column;
+        background-color: #4E85E3;
+        top: 0;
+        height: 50vh;
+        width: 50%;
+        margin-right: -3%;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 12%;
+        z-index: -1;
+        padding-bottom: 80%;
+        transform: translateX(100%);
+        transition: all 1s;
+    }
+
+    .slide {
+        transform: translateX(0);
+        transition: all 1s;
+    }
+    
+    nav ul li a{
+        font-size: 14px; 
+    }
+    
+    .btn {
+        height: 5vh;
+        width: 18vh;
+        font-size: 13px;
+        padding: 2px;
+        background-color: #FCC453;
+        font-family: "Font Digital";
+    }
+
+    .gambar,.gambar2{
+        display: none;
+    }
+    .gambar3{
+        display: block;
+        width: 106.5%;
+    }
+    #welkam{
+        margin-left: -8%;
+    }
+    #judul{
+        font-size: 25px;
+        width: 40%;
+        margin-top: -20%;
+    }
+    #teks{
+        margin-left: -5px;
+        width: 45%;
+        font-size: 12px;
+    }
+    #divkalender{
+        width: 106%;
+    }
+    #judul1{
+        font-size: 20px;
+    }
+    .isi{
+        font-size: 12px;
+        margin-top: -3%;
+    }
+    #kalender{
+        margin-top: -5%;
+    }
+    .bulan{
+        font-size: 14px;
+    }
+    #hari{
+        font-size: 12px;
+    }
+    .blue,.orange,.purple,.red,.green,.grey,.kosong,.redpopup{
+        font-size: 12px;
+        width: 100%;
+        height: 100%;
+    }
+    .bulan .tabpopup{
+        margin-left: 20%;
+    }
+    #btn{
+        width: 40%;
+        font-size: 12px;
+        height: 30px;
+    }
+    .redpopup .popuptext{
+        width: 155px;
+        height: 110px;
+        margin-top: -35%;
+    }
+    
+    #judulpopup{
+        font-size: 10px;
+    }
+    
+    #isipopup{
+        font-size: 8px;
+    }
+    
+    #buttonpopup{
+        width: 90px;
+        height: 20px;
+        font-size: 10px;
+    }
+    .kolom2{
+        height: 1px;
+    }
+    .bulan .tabpopup{
+        width: 200px;
+        height: 150px;
+        margin-top: -50px;
+        margin-left: 10%;
+    }
+    
+    #judultab{
+        font-size: 14px;
+    }
+    
+    .bulantab{
+        font-size: 12px;
+    }
+    
+    #tabokt{
+        width: 40px;
+        height: 20px;
+    }
+    #seminar{
+        width: 106.5%;
+        height: 145px;
+        margin-top: -6%;
+        justify-content: center;
+    }
+    .list2{
+        display: none;
+    }
+    .list1,.list3{
+        height: 130px;
+        width: 130px;
+        border-radius: 20px;
+    }
+    #list3{
+        border-radius: 20px;
+    }
+    .list2,.list3{
+        margin-left: 3%;
+    }
+    #kanan{
+        width: 20px;
+        height: 20px;
+    }
+    #kiri{
+        width: 20px;
+        height: 20px;
+    }
+    #footergambar{
+        width: 106.5%;
+    }
+    #judulinfo{
+        font-size: 20px;
+    }
+    .awaljudulinfo{
+        margin-top: -2%;
+    }
+    .awaljudulinfo,.awaljudulinfo1{
+        font-size: 14px;
+    }
+    .isiinfo,.isiinfo1{
+        font-size: 10px;
+    }
+    .hrinfo{
+        width: 97%;
+    }
+    .footer2{
+        width: 116.5%;
+    }
+    .judulfooter{
+        font-size: 13px;
+        text-align: center;
+    }
+    #emailtk, #telptk, #lokasitk{
+        width: 20px;
+        height: 20px;
+    }
+    #pemailtk, #ptelptk, #plokasitk {
+        font-size: 11px;
+    }
+    #imgsosmedfooterawal, .imgsosmedfooter {
+        width: 20px;
+        height: 20px;
+    }
+    .lastfooter {
+        padding-right: 6.5%;
+    }
+    .sosialmedia{
+        margin-left: -12%;
+    }
+    .hrfooter2{
+        width: 170px;
+    }
+    .tentangkami{
+        width: 50%;
+        margin-right: 15%;
+    }
+    #inputfooter{
+        width: 100px;
+        font-size: 8px;
+        text-align: center;
+    }
+    #hrfooter22{
+        width: 120px;
+    }
 }
