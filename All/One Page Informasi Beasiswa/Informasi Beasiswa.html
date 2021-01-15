@@ -4,39 +4,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beasiswa AU EGLS</title>
     <link rel="stylesheet" href="infobeasiswa.css">
+    <script src="Informasi Beasiswa.js"></script>
 </head>
 
 <body>
 
+    <nav>
+        <div>
+            <img id="logo" src="logo infobeasiswa 3.png">
+        </div>
+        <ul>
+            <li onclick="normal()" ><a href="../../index.html" id="menu" >Beranda</a></li>
+            <li onclick="normal()" ><a href="../One Page Eksplorasi Beasiswa/eksplorasi_beasiswa.html" id="menu">Eksplor Beasiswa</a></li>
+            <li onclick="normal()" ><a href="../../index.html" id="menu" >Seminar</a></li>
+            <li onclick="normal()" ><a href="../Login/login.html"><button type="menu" class="btn">Masuk/Daftar</button></a></li>
+        </ul>
+
+        <div onclick="show_menu()" class="toogle">
+            <span onclick="show_menu()" id="st"></span>
+            <span onclick="show_menu()" id="nd"></span>
+            <span onclick="show_menu()" id="rd"></span>
+        </div>
+    </nav>
+
     <div class="main1">
-        <img class="gambar" src="Group 199.png" alt="">
-        <button type="button" class="fav">+ Favorit</button>
+        <button type="button" class="fav" id="fav1">+ Favorit</button>
+        <button type="button" class="fav" id="fav2">+</button>
         <h1>AU Emergin Global Leader Scholarship</h1>
         <p>Mahasiswa internasional termasuk dari Indonesia berkesempatan 
             untuk melanjutkan studi pada jenjang S1 di Amerikan Serikat 
-            dengan <br> menggunakan beasiswa dari salah satu perguruan tinggi 
+            dengan menggunakan beasiswa dari salah satu perguruan tinggi 
             disana yaitu American University. Melalui program AU Emerging 
-            Global Leader <br> Scholarship, pihak American University menawarkan 
+            Global Leader Scholarship, pihak American University menawarkan 
             beasiswa bagi para kandidat yang memiliki prestasi akademik, 
-            potensi <br> kepemimpinan, dan keinginan untuk terlibat dalam 
+            potensi kepemimpinan, dan keinginan untuk terlibat dalam 
             lingkup global di masa depan.</p>
     
         <div class="iconx1">
-            <img src="Group 228 (1).png" id="icon1">
-            <img src="iconfinder_Purse_669953 1.png" id="icon1">
-            <img src="Group 198.png" id="icon1">
-            <img src="Group 189.png" id="icon1">
-        </div>
-    
-        <div class="captx1">
-            <p id="capt1"><b id="t">Jenjang :</b><br>
-            Sarjana</p>
-            <p id="capt1"><b id="t">Pembiayaan :</b><br>
-            Penuh</p>
-            <p id="capt1"><b id="t">Kategori :</b><br>
-            Kuliah</p>
-            <p id="capt1"><b id="t">Deadline :</b><br>
-            15 Januari 2021</p>
+            <div class="icon_teks">
+                <img src="Group 228 (1).png" id="icon1x">
+                <p id="capt1"><b id="t">Jenjang :</b><br>
+                Sarjana</p>
+            </div> 
+            <div class="icon_teks">
+                <img src="iconfinder_Purse_669953 1.png" id="icon1x">
+                <p id="capt1"><b id="t">Pembiayaan :</b><br>
+                Penuh</p>
+            </div>
+            <div class="icon_teks">
+                <img src="Group 198.png" id="icon1x">
+                <p id="capt1"><b id="t">Kategori :</b><br>
+                Kuliah</p>
+            </div>
+            <div class="icon_teks">
+                <img src="Group 189.png" id="icon1x">
+                <p id="capt1"><b id="t">Deadline :</b><br>
+                15 Januari 2021</p>
+            </div>
         </div>
     </div>
 
@@ -45,7 +69,7 @@
         <div class="main_a">
             <table class="col-12-tabel">
                 <tr>
-                    <td class="icon2"><img src="iconfinder_Purse_669953 1.png"></td>
+                    <td class="icon2"><img id="icon2" src="iconfinder_Purse_669953 1.png"></td>
                     <td class="teksx2"><p><b id="teks2">1. Pembiayaan</b><br>
                         Beasiswa mencakup semua tagihan biaya di AU, seperti 
                         biaya kuliah penuh, kamar, dan makan. Meski begitu 
@@ -57,7 +81,7 @@
                 </tr>
     
                 <tr>
-                    <td class="icon2"><img src="Group 200.png"></td>
+                    <td class="icon2"><img id="icon2" src="Group 200.png"></td>
                     <td class="teksx2"><p><b id="tengah">2. Pembaruan Beasiswa</b><br>
                         Penerima beasiswa S1 American University dapat memperbarui 
                         beasiswa yang diperoleh setiap tahun hingga maksimum empat 
@@ -67,7 +91,7 @@
                 </tr>
 
                 <tr>
-                    <td class="icon2"><img src="Group 197.png"></td>
+                    <td class="icon2"><img id="icon2" src="Group 197.png"></td>
                     <td class="teksx2"><p><b id="teks2">4. Bagaimana Jika Tidak Lolos?</b><br>
                         Jika kandidat yang melamar beasiswa AU EGL di American University 
                         tidak diterima untuk 2021, masih tersedia peluang beasiswa parsial 
@@ -105,9 +129,9 @@
         <div class="isiskill">
             <div class="catatan">
                 <img src="catatan.png" id="gambarcatatan">
-                <p id="catatantulis">Siswa dalam sistem IB harus <br> lulus dengan ijazah IB penuh <br> 
-                    dengan sekurang - kurangnya <br> 3 HL. Siswa yang belajar di <br> sistem British A-Level harus 
-                    <br> merampungkan setidaknya <br> 3 Level A dan menyelesaikan <br> 13 tahun sudi sebelum <br> Agustus 2021</p>
+                <p id="catatantulis">Siswa dalam sistem IB harus lulus dengan ijazah IB penuh 
+                    dengan sekurang - kurangnya 3 HL. Siswa yang belajar di sistem British A-Level harus 
+                    merampungkan setidaknya 3 Level A dan menyelesaikan 13 tahun sudi sebelum Agustus 2021</p>
             </div>
             <div class="listskill1">
                 <div class="skill1">
@@ -162,7 +186,7 @@
         <div class="main_c">
             <table class="col-12-tabel1">
                 <tr>
-                    <td class="icon5"><img src="Group 206 (1).png"></td>
+                    <td class="icon5"><img id="icon5" src="Group 206 (1).png"></td>
                     <td class="teksx5"><p><b id="teks5">1. Isi formulir pendaftaran</b><br>
                         Lakukan pendaftaran dengan melengkapi formulir pendaftaran secara 
                         online pada website AU EGLS. (Catatan : Sebelum melakukan pendaftaran, 
@@ -171,7 +195,7 @@
                 </tr>
     
                 <tr>
-                    <td class="icon5"><img src="iconfinder_Artboard_1_1790661 1.png"></td>
+                    <td class="icon5"><img id="icon5" src="iconfinder_Artboard_1_1790661 1.png"></td>
                     <td class="teksx5"><p><b id="teks5">2. Lengkapi berkas-berkas</b><br>
                         Mengajukan bank letter dan formulir AU Certification of Finance (AU CFIS). 
                         Masing-masing memperlihatkan minimal US $ 4.000</p>
@@ -179,7 +203,7 @@
                 </tr>
     
                 <tr>
-                    <td class="icon5"><img src="Group 207.png"></td>
+                    <td class="icon5"><img id="icon5" src="Group 207.png"></td>
                     <td class="teksx5"><p><b id="teks5">3. Ajukan berkas-berkas pendukung</b><br>
                         Ajukan hasil skor resmi TOEFL, IELTS, atau Duolinggo paling lambat 
                         tanggal 15 Desember 2020</p>
@@ -187,7 +211,7 @@
                 </tr>
                 
                 <tr>
-                    <td class="icon5"><img src="iconfinder_Paper-Plane_379428 1.png"></td>
+                    <td class="icon5"><img id="icon5" src="iconfinder_Paper-Plane_379428 1.png"></td>
                     <td class="teksx5"><p><b id="teks5">4. Kirim formulir dan berkas-berkas</b><br>
                         Lengkapi dan kirim aplikasi umum, bersama dengan semua dokumen pendukung 
                         per ceklis yang tertera di website AU EGLS sebelum tanggal 15 Desember 2020 
@@ -315,16 +339,6 @@
         </div>
         <div class="col-12-lastfooter">
             <br>
-        </div>
-    </div>
-
-    <div id="navbar">
-        <img id="logo" src="logo infobeasiswa 3.png">
-        <div id="navbar1">
-            <a href="../../index.html" class="menu_nav" id="beranda">Beranda</a>
-            <a href="../One Page Eksplorasi Beasiswa/eksplorasi_beasiswa.html" class="menu_nav" id="kalender">Eksplor Beasiswa</a>
-            <a href="../../index.html" class="menu_nav" id="seminar">Seminar</a>
-            <a href="../Login/login.html"><button type="menu" class="btn" id="login">Masuk/Daftar</button></a>
         </div>
     </div>
 </body>

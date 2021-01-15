@@ -8,86 +8,100 @@
     src: url(Poppins-Bold.ttf);
 }
 
-body {
+* {
     margin: 0;
     padding: 0;
-    background-color: white;
+}
+
+body {
     font-family: "poppins";
-    padding-right: -20px;
-    margin-right: -20px;
 }
 
-.gambar {
-    position: absolute;
-    size: 100%;
-    margin-top: -10%;
-    padding-top: -10%;
-}
-
-#navbar{
-    position: fixed;
-    margin-bottom: 500px;
-    width: 100%;
-    height: 11%;
+nav{
+    display: flex;
     background-color: #4E85E3;
+    justify-content: space-around;
     box-shadow: 0px 0px 6px 0px black;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
 }
 
 #logo{
-    width: 20%;
-    padding-top: 10px;
-    padding-left: 10px;
+    width: 80%;
+    padding: 5px;
+    margin-left: -42%;
+    margin-top: 5px;
 }
 
-#navbar1{
+nav ul{
     display: flex;
-    width: 100%;
-    padding-left: 18px;
+    margin-top: 18px;
+    list-style: none;
+    justify-content: space-between;
+    width: 40%;
+    margin-right: -30%;
 }
 
-a{
+nav ul li a{
+    color: white;
     text-decoration: none;
-    font-family: "poppins";
-    font-size: 2.5vh;
-    color: #FFFF;
-    padding-top: 10px;
-    padding-bottom: 20px;
-    padding-left: 30px;
-    margin-top: -3.4%;
 }
 
-a:hover {
+nav ul li a:hover{
     color: #2756a8;
 }
 
-#beranda {
-    margin-left: 57%;
-}
-
 .btn {
-    border-radius: 40px;
     outline: none;
     border-width: 0px;
     font-family: "poppins";
     color: white;
-}
-
-#login {
     background-color: #FCC453;
     width: 118%;
     height: 5.5vh;
     border-radius: 50px;
-    margin-top: -10%;
-    margin-left: 2%;
-    font-size: 2.3vh;
+    font-size: 2vh;
+    padding: 5px;
+    margin-top: -5px;
 }
 
-#login:hover{
+.btn:hover{
     background-color: #98BEFF;
 }
 
-#login:focus {
+.btn:focus {
     background-color: #275bb6;
+}
+
+.toogle {
+    display: flex;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#st{
+    transform-origin: 0 0;
+} 
+
+#rd {
+    transform-origin: 0 100%;
+}
+
+.toogle span {
+    z-index: -1;
+    display: none;
+    width: 28px;
+    height: 3px;
+    border-radius: 15px;
+    background-color: white;
+    transition: all 0.5s;
+}
+
+#st, #rd{
+    transform-origin : 0 0;
 }
 
 .fav {
@@ -105,6 +119,13 @@ a:hover {
     margin-bottom: -5px;
 }
 
+#fav2 {
+    border-radius: 30px;
+    display: none;
+    width: 50px;
+    height: 50px;
+}
+
 .fav:focus {
     background-color: #FCC453;
     outline: none;
@@ -116,49 +137,44 @@ a:hover {
 }
 
 .main1 {
-    position: absolute;
+    background-image: url(Group\ 199.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.main1 {
     padding-top: 10%;
 }
 
 .main1 p {
-    position: relative;
     text-align: center;
     font-size: 18px;
     color: white;
-    margin-bottom: 80px;
-    margin-top: 100px;
-    padding-left: 50px;
+    margin-top: 2%;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .main1 h1 {
-    position: absolute;
-    padding-left: 13%;
     font-family: "poppins bold";
     color: #FCC453;
     font-size: 50px;
-    padding-top: -5px;
-    margin-top: -5px;
+    margin-left: 13%;
 }
 
 .iconx1 {
-    position: absolute;
     display: flex;
-    padding-left: -100px;
-    margin-left: -100px;
-    margin-top: 30px;
+    flex-wrap: wrap;
+    margin-top: 7%;
+    justify-content: space-around;
 }
 
-#icon1 {
-    padding-left: 230px;
-}
-
-.captx1 {
-    position: absolute;
+.icon_teks {
     display: flex;
-    margin-top: 35px;
-    padding-left: -90px;
-    margin-left: -90px;  
-    padding-bottom: -20px; 
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
 }
 
 #t {
@@ -169,22 +185,18 @@ a:hover {
 #capt1 {
     font-size: 18px;
     color: #4E85E3;
-    padding-left: 216px;
 }
 
 .main2 {
-    margin-top: 650px;
-    position: absolute;
+    margin-top: 8%;
 }
 
 .main2 h1 {
     font-family: "poppins bold";
-    margin-top: 0%;
     font-size: 40px;
     color: #FCC453;
-    padding-top: 30px;
-    padding-left: 20px;
-    margin-bottom: 10px;
+    margin-left: 2%;
+    margin-bottom: 2%;
 }
 
 .main_a {
@@ -230,24 +242,19 @@ a:hover {
 }
 
 .main3 {
-    margin-top: 1250px;
-    position: absolute;
+    margin-top: 8%;
 }
 
 .main_b {
     display: flex;
-    margin: 0;
-    padding-top: 80px;
 }
 
 .main3 h1 {
     font-family: "poppins bold";
-    margin-top: 0%;
     font-size: 40px;
     color: #FCC453;
-    padding-top: 30px;
-    padding-left: 20px;
-    margin-bottom: 10px;
+    margin-left: 2%;
+    margin-bottom: 5%;
 }
 
 .bg {
@@ -261,46 +268,46 @@ a:hover {
 }
 
 .icon3 {
-    padding-top: -45px;
-    margin-top: -45px;
-    padding-left: 180px;
+    margin-top: -9%;
+    margin-left: 40%;
 }
 
 .bg p {
     text-align: center;
-    margin-left: 50px;
-    margin-right: 50px;
-    padding-top: 20px;
+    margin-top: 2%;
     color: white;
     font-size: 17px;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .main4 {
-    position: absolute;
-    margin-top: 1730px;
+    margin-top:8%;
 }
 
 .main4 h1{
     font-family: "poppins bold";
     color: #FCC453;
-    margin-left: 20px;
-    margin-top: 6%;
-    margin-bottom: 45px;
+    margin-left: 2%;
+    margin-bottom: 2%;
     font-size: 40px;
 }
 
 .isiskill{
     display: flex;
+    justify-content: space-evenly;
 }
 
 .catatan{
     background-color: #F1F3F9;
     box-shadow: 0px 0px 5px #CACED6;
-    width: 400px;
-    height: 430px;
-    margin-left: 5%;
-    margin-top: -1%;
+    width: 20%;
     border-radius: 30px;
+    padding-bottom: 1.7%;
+    padding-top: 1.7%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .catatan:hover{
@@ -310,31 +317,18 @@ a:hover {
 #gambarcatatan{
     height: 100px;
     width: 100px;
-    margin-left: 33%;
-    margin-top: 12%;
+    margin-bottom: 2%;
 }
 
 #catatantulis{
     color: #A1A2A5;
     text-align: center;
-    margin-top: 8%;
-}
-
-.listskill1,.listskill2{
-    margin-left: 3%;
-    margin-top: -1%;
+    width: 73%;
 }
 
 .skill1,.skill2,.skill3,.skill4,.skill5{
     display: flex;
-}
-
-.skill2.skill3{
-    margin-top: 3%;
-}
-
-.skill5{
-    margin-top: 5%;
+    margin-top: 6%;
 }
 
 #gambarskill1{
@@ -343,7 +337,6 @@ a:hover {
 }
 
 .tulisskill{
-    margin-top: -4%;
     margin-left: 5%;
     width: 350px;
 }
@@ -356,7 +349,6 @@ a:hover {
 #isilist{
     color: #A1A2A5;
     font-size: 16px;
-    margin-top: -5%;
 }
 
 .persiapkan,.selamat{
@@ -387,18 +379,15 @@ a:hover {
 }
 
 .main5 {
-    margin-top: 2400px;
-    position: absolute;
+    margin-top: 8%;
 }
 
 .main5 h1 {
     font-family: "poppins bold";
-    margin-top: 0%;
     font-size: 40px;
     color: #FCC453;
-    padding-top: 30px;
-    padding-left: 20px;
-    margin-bottom: 10px;
+    margin-left: 2%;
+    margin-bottom: 2%;
 }
 
 .main_c {
@@ -410,23 +399,20 @@ a:hover {
     text-align: left;
     border-collapse: collapse;
     border: 1px solid transparent;
-    height: 100px;
 }
 
 .col-12-tabel1 tr {
-    height: 122px;
+    height: 100px;
 }
 
 .icon5 {
-    margin-left: 10%;
-    padding-left: 30px;
+    padding-left: 2%;
     size: 5%;
 }
 
 .teksx5 {
-    padding-left: 28px;
+    padding-left: 2%;
     color: white;
-    padding-bottom: 10px;
 }
 
 #teks5 {
@@ -449,7 +435,8 @@ a:hover {
     background-color: #4E85E3;
     font-size: 18px;
     width: 17%;
-    height: 50px;
+    padding-bottom: 0.75%;
+    padding-top: 0.75%;
 }
 
 #daftar:hover{
@@ -465,35 +452,34 @@ a:hover {
 }
 
 .main6 {
-    position: absolute;
-    margin-top: 3070px;
-    margin-bottom: 3%;
+    margin-top: 8%;
 }
 
 .main6 h1{
     font-family: "poppins bold";
     color: #FCC453;
-    margin-left: 20px;
+    margin-left: 2%;
     margin-top: 6%;
     font-size: 40px;
-    margin-bottom: 45px;
+    margin-bottom: 2%;
 }
 
 .lataralur{
     display: flex;
-    margin-top: -2%;
 }
 
 .lataralur1{
     width: 50%;
     background-color: #679BF4;
-    height: 420px;
+    height: 380px;
+    padding-top: 2%;
 }
 
 .lataralur2{
     width: 50%;
     background-color: #98BEFF;
-    height: 420px;
+    height: 391px;
+    padding-top: 1.2%;
 }
 
 .alur1,.alur2,.alur3,.alur4,.alur5,.alur6{
@@ -523,7 +509,6 @@ a:hover {
 }
 
 .tulisalur{
-    margin-top: -2.7%;
     margin-left: 6%;
     width: 610px;
 }
@@ -543,22 +528,19 @@ a:hover {
 #isilist123,#isilist456{
     color: #ffffff;
     font-size: 16px;
-    margin-top: -5%;
 }
 
 .ucapan {
-    position: absolute;
-    margin-top: 3690px;
+    margin-top: 3%;
     font-family: "poppins bold";
     color: #FCC453;
     font-size: 20px;
-    margin-left: 100px;
+    text-align: center;
 }
 
 .footer {
     background-size: 100%;
-    position: absolute;
-    margin-top: 3850px;
+    margin-top: 3%;
     background-color: #5167aa;
     width: 1349px;
 }
@@ -567,23 +549,23 @@ a:hover {
     display: flex;
 }
 
-.tentangkami {
-    margin-left: 5%;
-}
-
 .emailtk, .telptk, .lokasitk {
     display: flex;
     color: white;
+    padding-top: 2%;
 }
 
 #icon6 {
     width: 25px;
     height: 25px;
+    margin-top: 1.2%;
+    margin-right: 2%;
 }
 
 .col-12-footer2{
     background-color: #5167aa;
     display: flex;
+    justify-content: space-around;
 }
 
 .tentangkami,.sosialmedia,.populer,.terbaru,.kontakkami{
@@ -591,7 +573,7 @@ a:hover {
 }
 
 .tentangkami,.sosialmedia,.populer,.terbaru{
-    margin-left: 5%;
+    margin-top: 1.3%;
 }
 
 .judulfooter{
@@ -599,15 +581,8 @@ a:hover {
     color: white;
 }
 
-.hrfooter2{
-    margin-top: -5%;
+.hrfooter2, .hrfooter3{
     width: 250px;   
-}
-
-.hrfooter3{
-    margin-top: -5%;
-    width: 250px;
-    margin-bottom: -5%;
 }
 
 .emailtk,.telptk,.lokasitk{
@@ -619,30 +594,32 @@ a:hover {
     width: 25px;
 }
 
-#pemailtk,#ptelptk,#plokasitk,#ppopulertk,#pterbarutk{
-    margin-top: -0.1px;
+#pemailtk,#ptelptk,#plokasitk,#ppopulertk{
+    font-size: 12px;
 }
 
-#pemailtk,#ptelptk,#plokasitk,#ppopulertk{
-    margin-left: 5%;
-    font-size: 12px;
+.hrfooter3, .hrfooter2{
+    margin-bottom: 2%;
 }
 
 #edit{
-    margin-top: 18px;
     font-size: 12px;
 }
 
-#pterbarutk {
+#edit, #pterbarutk {
     font-size: 12px;
+    margin-bottom: 2%;
 }
 
 .sosmedfooter{
     display: flex;
+    justify-content: space-between;
+    width: 45%;
+    margin-top: 3%;
+    margin-bottom: 5%;
 }
 
 .imgsosmedfooter{
-    margin-left: 4.7%;
     width: 27px;
 }
 
@@ -655,9 +632,391 @@ a:hover {
     border-radius: 50px;
     width: 225px;
     height: 30px;
+    margin-top: 5%;
 }
 
 .col-12-lastfooter{
     background-color: #4E85E3;
     width: 100%;
+}
+
+@media (max-width:576px){
+
+    #logo {
+        margin-top: 5px;
+        width: 70%;
+        margin-left: 2%;
+    }
+
+    .toogle {
+        margin-top: 20px;
+        margin-right: 12px;
+    }
+    
+    .toogle span {
+        display: block;
+    }
+
+    nav ul{
+        right: 0px;
+        position: absolute;
+        flex-direction: column;
+        background-color: #4E85E3;
+        top: 0;
+        height: 50vh;
+        width: 65%;
+        margin-right: -3%;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 15%;
+        z-index: -1;
+        padding-bottom: 80%;
+        transform: translateX(100%);
+        transition: all 1s;
+    }
+
+    .slide {
+        transform: translateX(0);
+        transition: all 1s;
+    }
+    
+    #menu {
+        font-size: 15px; 
+    }
+    
+    .btn {
+        height: 5.5vh;
+        width: 24vh;
+        font-size: 14px;
+        padding: 2px;
+    }
+
+    #fav1 {
+        display: none;
+    }
+
+    #fav2 {
+        display: block;
+        background-color: #4E85E3;
+        border: none;
+        position: fixed;
+        font-size: 30px;
+        top: 90%;
+        left: 82%;
+        box-shadow: 0px 0px 2px 0px black;
+    }
+
+    .main1 {
+        background-size: 180%;
+    }
+    
+    .main1 {
+        padding-top: 23%;
+    }
+    
+    .main1 p {
+        text-align: left;
+        font-size: 14px;
+        color: #A1A2A5;
+        margin-top: 8%
+    }
+    
+    .main1 h1 {
+        font-family: "poppins bold";
+        color: #FCC453;
+        font-size: 30px;
+        margin-left: 13%;
+    }
+
+    #icon1x {
+        width: 50px;
+        height: 50px;
+        margin-left: -50%;
+    }
+
+    .iconx1 {
+        margin-left: 18%;
+    }
+    
+    .icon_teks {
+        margin-top: 10%;
+        width: 50%;
+        height: 100px;
+        text-align: center;
+    }
+    
+    #t {
+        font-size: 14px;
+    }
+    
+    #capt1 {
+        font-size: 13px;
+    }
+    
+    .main2 {
+        margin-top: 18%;
+    }
+    
+    .main2 h1 {
+        font-size: 30px;
+        margin-left: 6.5%;
+        margin-bottom: 2%;
+    }
+    
+    .col-12-tabel {
+        font-size: 13px;
+        border-collapse: collapse;
+        border: 1px solid transparent;
+        height: 100px;
+    }
+    
+    .col-12-tabel tr {
+        height: 150px;
+    }
+    
+    .icon2 {
+        padding-left: 5%;
+        padding-right: 0;
+    }
+
+    #icon2 {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .teksx2 {
+        padding-left: 4%;
+        padding-right: 4%;
+        padding-bottom: 10px;
+    }
+    
+    #tengah {
+        font-size: 15px;
+    }
+    
+    #teks2 {
+        font-size: 15px;
+    }
+    
+    .col-12-tabel tr:nth-child(even) {
+        background-color: #4E85E3;
+    }
+    
+    .main3 {
+        margin-top: 18%;
+    }
+    
+    .main_b {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .main3 h1 {
+        font-size: 30px;
+        margin-bottom: 10%;
+        margin-left: 6%;
+    }
+    
+    .bg {
+        width: 100%;
+        height: 140px;
+    }
+    
+    .icon3 {
+        margin-top: -7%;
+        margin-left: 45%;
+        width: 50px;
+        height: 50px;
+    }
+    
+    .bg p {
+        font-size: 13px;
+    }
+    
+    .main4 {
+        margin-top:18%;
+    }
+    
+    .main4 h1{
+        text-align: center;
+        margin-left: 4.5%;
+        margin-bottom: 2%;
+        font-size: 30px;
+    }
+    
+    .isiskill{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+    
+    .catatan, .selamat, .persiapkan{
+        display: none;
+    }
+    
+    #gambarskill1{
+        height: 50px;
+        width: 50px;
+        margin-left: 5%;
+    }
+    
+    #judullist{
+        font-size: 15px;
+    }
+    
+    #isilist{
+        font-size: 13px;
+    }
+    
+    .main5 {
+        margin-top: 18%;
+    }
+    
+    .main5 h1 {
+        font-size: 30px;
+        margin-left: 25%;
+    }
+    
+    .col-12-tabel1 {
+        font-size: 13px;
+    }
+    
+    .col-12-tabel1 tr {
+        height: 100px;
+    }
+    
+    .icon5 {
+        padding-left: 2%;
+    }
+
+    #icon5 {
+        width: 50px;
+        height: 50px;
+    }
+
+    .col-12-tabel1 p {
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+    
+    #teks5 {
+        font-size: 15px;
+    }
+    
+    #daftar {
+        margin-left: 28%;
+        margin-top: 5%;
+        font-size: 15px;
+        width: 45%;
+        padding-bottom: 2%;
+        padding-top: 2%;
+    }
+    
+    .main6 {
+        margin-top: 18%;
+    }
+    
+    .main6 h1{
+        text-align: center;
+        margin-left: 4%;
+        margin-top: 6%;
+        font-size: 30px;
+    }
+    
+    .lataralur{
+        flex-direction: column;
+    }
+    
+    .lataralur1, .lataralur2{
+        width: 100%;
+        background-color: #98BEFF;
+        height: 60%;
+    }
+
+    .lataralur1{
+    }
+    
+    .alur1,.alur2,.alur3 {
+        margin-top: 4%;
+    }
+    
+    .alur4,.alur5,.alur6{
+        margin-bottom: 4%;
+    }
+    
+    .alur1,.alur2,.alur3,.alur4,.alur5,.alur6{
+        margin-left: 5%;
+    }
+    
+    #gambaralur{
+        height: 50px;
+        width: 50px;
+    }
+    
+    #judullist123, #judullist456{
+        font-size: 15px;
+    }
+    
+    #isilist123,#isilist456{
+        font-size: 13px;
+    }
+    
+    .ucapan {
+        margin-top: 10%;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .footer{
+        margin-top: 10%;
+        width: 94%;
+    }
+
+    .footer hr {
+        width: 100%;
+    }
+
+    .col-12-footer2 {
+        justify-content: unset;
+    }
+
+    .tentangkami, .sosialmedia{
+        margin-left: 5%;
+    }
+
+    .judulfooter{
+        font-size: 13px;
+        text-align: center;
+    }
+
+    #pemailtk, #ptelptk, #plokasitk {
+        font-size: 11px;
+    }
+
+    #inputfooter{
+        width: 130px;
+        font-size: 10px;
+    }
+
+    #icon6 {
+        width: 20px;
+        height: 20px;
+    }
+
+    #icon1, .imgsosmedfooter {
+        width: 20px;
+        height: 20px;
+    }
+
+    .footer, .lastfooter {
+        padding-right: 6%;
+    }
+    
+    .terbaru, .populer{
+        display: none;
+    }
+
+    .col-12-lastfooter {
+        width: 106%;
+    }
 }
